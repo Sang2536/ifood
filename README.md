@@ -2,8 +2,13 @@
 
 ##  Using
 `
-    Prettier
-    TypeScript
+    - Prettier
+    - TypeScript
+    - Customize Cra: npm i customize-cra --save-dev
+    - Babel Plugin: npm i babel-plugin-module-resolver --save-dev
+    - PropTypes: npm i prop-types
+    - Bootstrap: npm i bootstrap
+    - Sass: npm i sass
 `
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
