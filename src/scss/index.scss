@@ -1,10 +1,17 @@
-// Override default variables before the import
-:root {
-    --dark-color: #000000;
-}
-
 // Import Bootstrap and its default variables
 @import '~bootstrap/scss/bootstrap.scss';
+
+/*---------------------------------------
+  CUSTOM PROPERTIES ( VARIABLES )             
+-----------------------------------------*/
+:root {
+    --white-color: #ffffff;
+    --primary-color: #ff4400;
+    --section-bg-color: #f0f8ff;
+    --dark-color: #000000;
+    --grey-color: #d0d1d1;
+    --p-color: #717275;
+}
 
 body {
     margin: 0;
