@@ -1,7 +1,6 @@
 export { default as Badge } from './Badge';
 export { default as Button } from './Button';
 export { default as Hr } from './Hr';
-export { default as Icon } from './Icon';
 export { default as Image } from './Image';
 export { default as Indicator } from './Indicator';
 export { default as Link } from './Link';
