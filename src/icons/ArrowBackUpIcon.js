@@ -1,5 +1,4 @@
-export default function ArrowBackUpIcon ({ width = '1.5rem', height = '1.5rem', className = '' })
-{
+export default function ArrowBackUpIcon({ width = '1.5rem', height = '1.5rem', className = '' }) {
     return (
         <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -18,4 +17,4 @@ export default function ArrowBackUpIcon ({ width = '1.5rem', height = '1.5rem', 
             <path d="M5 10h11a4 4 0 1 1 0 8h-1" />
         </svg>
     );
-};
+}

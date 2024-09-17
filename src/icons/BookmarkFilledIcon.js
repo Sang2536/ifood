@@ -1,4 +1,4 @@
-export const BookmarkFilledIcon = ({ width = '1.5rem', height = '1.5rem', className = '' }) => {
+export default function BookmarkFilledIcon({ width = '1.5rem', height = '1.5rem', className = '' }) {
     return (
         <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -12,4 +12,4 @@ export const BookmarkFilledIcon = ({ width = '1.5rem', height = '1.5rem', classN
             <path d="M14 2a5 5 0 0 1 5 5v14a1 1 0 0 1 -1.555 .832l-5.445 -3.63l-5.444 3.63a1 1 0 0 1 -1.55 -.72l-.006 -.112v-14a5 5 0 0 1 5 -5h4z" />
         </svg>
     );
-};
+}

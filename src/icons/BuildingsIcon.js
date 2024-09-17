@@ -1,4 +1,4 @@
-export const BuildingsIcon = ({ width = '1.5rem', height = '1.5rem', className = '' }) => {
+export default function BuildingsIcon({ width = '1.5rem', height = '1.5rem', className = '' }) {
     return (
         <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -26,4 +26,4 @@ export const BuildingsIcon = ({ width = '1.5rem', height = '1.5rem', className =
             <path d="M17 16v0" />
         </svg>
     );
-};
+}

@@ -1,4 +1,4 @@
-export const SearchIcon = ({ width = '1.5rem', height = '1.5rem', className = '' }) => {
+export default function SearchIcon({ width = '1.5rem', height = '1.5rem', className = '' }) {
     return (
         <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -17,4 +17,4 @@ export const SearchIcon = ({ width = '1.5rem', height = '1.5rem', className = ''
             <path d="M21 21l-6 -6" />
         </svg>
     );
-};
+}

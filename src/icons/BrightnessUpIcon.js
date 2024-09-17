@@ -1,4 +1,4 @@
-export const BrightnessUpIcon = ({ width = '1.5rem', height = '1.5rem', className = '' }) => {
+export default function BrightnessUpIcon({ width = '1.5rem', height = '1.5rem', className = '' }) {
     return (
         <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -24,4 +24,4 @@ export const BrightnessUpIcon = ({ width = '1.5rem', height = '1.5rem', classNam
             <path d="M7 7l-1.4 -1.4" />
         </svg>
     );
-};
+}

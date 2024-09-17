@@ -1,4 +1,4 @@
-export const CamperIcon = ({ width = '1.5rem', height = '1.5rem', className = '' }) => {
+export default function CamperIcon({ width = '1.5rem', height = '1.5rem', className = '' }) {
     return (
         <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -22,4 +22,4 @@ export const CamperIcon = ({ width = '1.5rem', height = '1.5rem', className = ''
             <path d="M14 8v10" />
         </svg>
     );
-};
+}

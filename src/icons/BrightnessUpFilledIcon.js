@@ -1,4 +1,4 @@
-export const BrightnessUpFilledIcon = ({ width = '1.5rem', height = '1.5rem', className = '' }) => {
+export default function BrightnessUpFilledIcon({ width = '1.5rem', height = '1.5rem', className = '' }) {
     return (
         <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -20,4 +20,4 @@ export const BrightnessUpFilledIcon = ({ width = '1.5rem', height = '1.5rem', cl
             <path d="M4.893 4.893a1 1 0 0 1 1.32 -.083l.094 .083l1.4 1.4a1 1 0 0 1 -1.32 1.497l-.094 -.083l-1.4 -1.4a1 1 0 0 1 0 -1.414z" />
         </svg>
     );
-};
+}

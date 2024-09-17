@@ -1,4 +1,4 @@
-export const CertificateIcon = ({ width = '1.5rem', height = '1.5rem', className = '' }) => {
+export default function CertificateIcon({ width = '1.5rem', height = '1.5rem', className = '' }) {
     return (
         <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -21,4 +21,4 @@ export const CertificateIcon = ({ width = '1.5rem', height = '1.5rem', className
             <path d="M6 15l2 0" />
         </svg>
     );
-};
+}

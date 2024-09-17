@@ -1,4 +1,4 @@
-export const TagsFilledIcon = ({ width = '1.5rem', height = '1.5rem', className = '' }) => {
+export default function TagsFilledIcon({ width = '1.5rem', height = '1.5rem', className = '' }) {
     return (
         <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -13,4 +13,4 @@ export const TagsFilledIcon = ({ width = '1.5rem', height = '1.5rem', className 
             <path d="M14.293 5.293a1 1 0 0 1 1.414 0l4.593 4.592a5.82 5.82 0 0 1 0 8.23l-1.592 1.592a1 1 0 0 1 -1.414 -1.414l1.592 -1.592a3.82 3.82 0 0 0 0 -5.402l-4.592 -4.592a1 1 0 0 1 0 -1.414" />
         </svg>
     );
-};
+}

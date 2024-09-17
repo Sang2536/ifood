@@ -1,4 +1,4 @@
-export const MailFilledIcon = ({ width = '1.5rem', height = '1.5rem', className = '' }) => {
+export default function MailFilledIcon({ width = '1.5rem', height = '1.5rem', className = '' }) {
     return (
         <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -13,4 +13,4 @@ export const MailFilledIcon = ({ width = '1.5rem', height = '1.5rem', className 
             <path d="M19 4c1.08 0 2.027 .57 2.555 1.427l-9.555 6.37l-9.555 -6.37a2.999 2.999 0 0 1 2.354 -1.42l.201 -.007h14z" />
         </svg>
     );
-};
+}

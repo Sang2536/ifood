@@ -1,5 +1,4 @@
-export default function ArrowBarToDownIcon ({ width = '1.5rem', height = '1.5rem', className = '' })
-{
+export default function ArrowBarToDownIcon({ width = '1.5rem', height = '1.5rem', className = '' }) {
     return (
         <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -20,4 +19,4 @@ export default function ArrowBarToDownIcon ({ width = '1.5rem', height = '1.5rem
             <path d="M12 14l-4 -4" />
         </svg>
     );
-};
+}

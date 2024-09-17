@@ -1,4 +1,4 @@
-export const MenuIcon = ({ width = '1.5rem', height = '1.5rem', className = '' }) => {
+export default function MenuIcon({ width = '1.5rem', height = '1.5rem', className = '' }) {
     return (
         <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -18,4 +18,4 @@ export const MenuIcon = ({ width = '1.5rem', height = '1.5rem', className = '' }
             <path d="M4 18l16 0" />
         </svg>
     );
-};
+}

@@ -1,4 +1,4 @@
-export const ChartAreaLineFilledIcon = ({ width = '1.5rem', height = '1.5rem', className = '' }) => {
+export default function ChartAreaLineFilledIcon({ width = '1.5rem', height = '1.5rem', className = '' }) {
     return (
         <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -13,4 +13,4 @@ export const ChartAreaLineFilledIcon = ({ width = '1.5rem', height = '1.5rem', c
             <path d="M15.232 3.36a1 1 0 0 1 1.382 -.15l.093 .083l4 4a1 1 0 0 1 -1.32 1.497l-.094 -.083l-3.226 -3.225l-4.299 5.158a1 1 0 0 1 -1.1 .303l-.115 -.049l-3.254 -1.626l-2.499 3.332a1 1 0 0 1 -1.295 .269l-.105 -.069a1 1 0 0 1 -.269 -1.295l.069 -.105l3 -4a1 1 0 0 1 1.137 -.341l.11 .047l3.291 1.645l4.494 -5.391z" />
         </svg>
     );
-};
+}

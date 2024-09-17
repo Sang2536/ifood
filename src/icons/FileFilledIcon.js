@@ -1,4 +1,4 @@
-export const FileFilledIcon = ({ width = '1.5rem', height = '1.5rem', className = '' }) => {
+export default function FileFilledIcon({ width = '1.5rem', height = '1.5rem', className = '' }) {
     return (
         <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -13,4 +13,4 @@ export const FileFilledIcon = ({ width = '1.5rem', height = '1.5rem', className 
             <path d="M19 7h-4l-.001 -4.001z" />
         </svg>
     );
-};
+}

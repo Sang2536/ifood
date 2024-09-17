@@ -1,4 +1,4 @@
-export const ChartPieFilledIcon = ({ width = '1.5rem', height = '1.5rem', className = '' }) => {
+export default function ChartPieFilledIcon({ width = '1.5rem', height = '1.5rem', className = '' }) {
     return (
         <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -13,4 +13,4 @@ export const ChartPieFilledIcon = ({ width = '1.5rem', height = '1.5rem', classN
             <path d="M14 3.5v5.5a1 1 0 0 0 1 1h5.5a1 1 0 0 0 .943 -1.332a10 10 0 0 0 -6.11 -6.111a1 1 0 0 0 -1.333 .943z" />
         </svg>
     );
-};
+}

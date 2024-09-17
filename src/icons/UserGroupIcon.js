@@ -1,4 +1,4 @@
-export const UserGroupIcon = ({ width = '1.5rem', height = '1.5rem', className = '' }) => {
+export default function UserGroupIcon({ width = '1.5rem', height = '1.5rem', className = '' }) {
     return (
         <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -19,4 +19,4 @@ export const UserGroupIcon = ({ width = '1.5rem', height = '1.5rem', className =
             <path d="M21 21v-2a4 4 0 0 0 -3 -3.85" />
         </svg>
     );
-};
+}

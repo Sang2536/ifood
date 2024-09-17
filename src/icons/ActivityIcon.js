@@ -1,5 +1,4 @@
-export default function ActivityIcon ({ width = '1.5rem', height = '1.5rem', className = '' })
-{
+export default function ActivityIcon({ width = '1.5rem', height = '1.5rem', className = '' }) {
     return (
         <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -17,4 +16,4 @@ export default function ActivityIcon ({ width = '1.5rem', height = '1.5rem', cla
             <path d="M3 12h4l3 8l4 -16l3 8h4" />
         </svg>
     );
-};
+}

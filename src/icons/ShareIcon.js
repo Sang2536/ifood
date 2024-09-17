@@ -1,4 +1,4 @@
-export const ShareIcon = ({ width = '1.5rem', height = '1.5rem', className = '' }) => {
+export default function ShareIcon({ width = '1.5rem', height = '1.5rem', className = '' }) {
     return (
         <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -20,4 +20,4 @@ export const ShareIcon = ({ width = '1.5rem', height = '1.5rem', className = '' 
             <path d="M8.7 13.3l6.6 3.4" />
         </svg>
     );
-};
+}

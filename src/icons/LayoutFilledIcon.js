@@ -1,4 +1,4 @@
-export const LayoutFilledIcon = ({ width = '1.5rem', height = '1.5rem', className = '' }) => {
+export default function LayoutFilledIcon({ width = '1.5rem', height = '1.5rem', className = '' }) {
     return (
         <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -14,4 +14,4 @@ export const LayoutFilledIcon = ({ width = '1.5rem', height = '1.5rem', classNam
             <path d="M18 3a3 3 0 0 1 3 3v12a3 3 0 0 1 -3 3h-2a3 3 0 0 1 -3 -3v-12a3 3 0 0 1 3 -3z" />
         </svg>
     );
-};
+}

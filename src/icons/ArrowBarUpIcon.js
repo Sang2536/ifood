@@ -1,5 +1,4 @@
-export default function ArrowBarUpIcon ({ width = '1.5rem', height = '1.5rem', className = '' })
-{
+export default function ArrowBarUpIcon({ width = '1.5rem', height = '1.5rem', className = '' }) {
     return (
         <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -20,4 +19,4 @@ export default function ArrowBarUpIcon ({ width = '1.5rem', height = '1.5rem', c
             <path d="M4 20l16 0" />
         </svg>
     );
-};
+}

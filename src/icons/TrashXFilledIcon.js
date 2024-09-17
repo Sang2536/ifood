@@ -1,4 +1,4 @@
-export const TrashXFilledIcon = ({ width = '1.5rem', height = '1.5rem', className = '' }) => {
+export default function TrashXFilledIcon({ width = '1.5rem', height = '1.5rem', className = '' }) {
     return (
         <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -13,4 +13,4 @@ export const TrashXFilledIcon = ({ width = '1.5rem', height = '1.5rem', classNam
             <path d="M14 2a2 2 0 0 1 2 2a1 1 0 0 1 -1.993 .117l-.007 -.117h-4l-.007 .117a1 1 0 0 1 -1.993 -.117a2 2 0 0 1 1.85 -1.995l.15 -.005h4z" />
         </svg>
     );
-};
+}

@@ -1,4 +1,4 @@
-export const StarHalfFilledIcon = ({ width = '1.5rem', height = '1.5rem', className = '' }) => {
+export default function StarHalfFilledIcon ({ width = '1.5rem', height = '1.5rem', className = '' }) {
     return (
         <svg
             xmlns="http://www.w3.org/2000/svg"

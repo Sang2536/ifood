@@ -1,4 +1,4 @@
-export const BoxIcon = ({ width = '1.5rem', height = '1.5rem', className = '' }) => {
+export default function BoxIcon({ width = '1.5rem', height = '1.5rem', className = '' }) {
     return (
         <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -19,4 +19,4 @@ export const BoxIcon = ({ width = '1.5rem', height = '1.5rem', className = '' })
             <path d="M12 12l-8 -4.5" />
         </svg>
     );
-};
+}

@@ -1,4 +1,4 @@
-export const UserCircleIcon = ({ width = '1.5rem', height = '1.5rem', className = '' }) => {
+export default function UserCircleIcon({ width = '1.5rem', height = '1.5rem', className = '' }) {
     return (
         <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -18,4 +18,4 @@ export const UserCircleIcon = ({ width = '1.5rem', height = '1.5rem', className 
             <path d="M6.168 18.849a4 4 0 0 1 3.832 -2.849h4a4 4 0 0 1 3.834 2.855" />
         </svg>
     );
-};
+}

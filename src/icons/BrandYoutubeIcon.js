@@ -1,5 +1,4 @@
-export default function BrandYoutubeIcon ({ width = '1.5rem', height = '1.5rem', className = '' })
-{
+export default function BrandYoutubeIcon({ width = '1.5rem', height = '1.5rem', className = '' }) {
     return (
         <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -18,4 +17,4 @@ export default function BrandYoutubeIcon ({ width = '1.5rem', height = '1.5rem',
             <path d="M10 9l5 3l-5 3z" />
         </svg>
     );
-};
+}
