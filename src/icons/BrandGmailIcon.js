@@ -8,10 +8,10 @@ export default function BrandGmailIcon ({ width = '1.5rem', height = '1.5rem', c
             viewBox="0 0 24 24"
             fill="none"
             stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            classNAme={`${className} icon icon-tabler icons-tabler-outline icon-tabler-brand-gmail`}
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            className={`${className} icon icon-tabler icons-tabler-outline icon-tabler-brand-gmail`}
         >
             <path stroke="none" d="M0 0h24v24H0z" fill="none" />
             <path d="M16 20h3a1 1 0 0 0 1 -1v-14a1 1 0 0 0 -1 -1h-3v16z" />
