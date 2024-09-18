@@ -3,12 +3,17 @@
 ##  Using
 `
     - Prettier
-    - TypeScript
+    /*  - TypeScript: npm i --save typescript @types/node @types/react @types/react-dom @types/jest  */
     - Customize Cra: npm i customize-cra --save-dev
     - Babel Plugin: npm i babel-plugin-module-resolver --save-dev
     - PropTypes: npm i prop-types
     - Bootstrap: npm i bootstrap
+    - jQuery: npm i jquery
     - Sass: npm i sass
+    - Loader (css & style): npm i css-loader style-loader
+    - Popper.js: npm i popper.js
+
+    - React Router Dom: npm i --save react-router-dom
 `
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

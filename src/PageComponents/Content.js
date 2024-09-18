@@ -1,20 +1,17 @@
-import { Icon, Image } from "../SingleComponents";
+import { Image } from '../SingleComponents';
+import { AwardFilledIcon, ActivityIcon } from '../icons';
 
-function ContentComponent () {
+function ContentComponent() {
     return (
         <div className="ContentComponent">
             <Image />
 
             <p>
-                <Icon />
+                <ActivityIcon />
+                <AwardFilledIcon />
                 Location: <code>src/PageComponents/Content.js</code> and save to reload.
             </p>
-            <a
-                className="content-component"
-                href="https://reactjs.org"
-                target="_blank"
-                rel="noopener noreferrer"
-            >
+            <a className="content-component" href="https://reactjs.org" target="_blank" rel="noopener noreferrer">
                 Content Component
             </a>
         </div>

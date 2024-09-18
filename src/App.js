@@ -6,11 +6,17 @@ import HomePage from './PageLayouts/HomePage';
 function App() {
     return (
         <div className="App">
-            <NavigationHeaderComponent />
+            <section className="preloader">
+                <div className="spinner">
+                    <span className="sk-inner-circle"></span>
+                </div>
+            </section>
 
-            <p>App (PageLayouts (PageComponents (SingleComponents))) </p>
+            <main>
+                <NavigationHeaderComponent />
 
-            <HomePage />
+                <HomePage />
+            </main>
 
             <FooterComponent />
         </div>

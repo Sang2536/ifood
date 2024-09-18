@@ -1,0 +1,21 @@
+/*---------------------------------------
+  CUSTOM ICON              
+-----------------------------------------*/
+.custom-icon {
+  color: var(--p-color);
+  font-size: 24px;
+}
+
+.custom-icon {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.bi-bag.custom-icon {
+  font-size: 17px;
+}
+
+.featured-icon {
+  color: var(--grey-color);
+  font-size: 52px;
+}

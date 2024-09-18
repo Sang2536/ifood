@@ -1,0 +1,24 @@
+
+/*---------------------------------------
+  ABOUT               
+-----------------------------------------*/
+.about .nav-pills .nav-item {
+  width: 100%;
+}
+
+.about .nav-pills .nav-link {
+  color: var(--grey-color);
+  font-size: 18px;
+  font-weight: var(--font-weight-bold);
+  border-left: 1px solid var(--grey-color);
+  border-radius: 0;
+  padding-right: 0;
+}
+
+.about .nav-pills .nav-link:hover,
+.about .nav-pills .nav-link.active, 
+.about .nav-pills .show>.nav-link {
+  background: transparent;
+  border-left-color: var(--primary-color);
+  color: var(--primary-color);
+}

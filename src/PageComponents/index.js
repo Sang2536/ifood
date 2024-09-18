@@ -4,6 +4,8 @@ export { default as CarouselComponent } from './Carousel';
 export { default as ContentComp } from './Content';
 export { default as FooterComponent } from './Footer';
 export { default as FormComponent } from './Form';
+export { default as HomeAboutComponent } from './HomeAbout';
+export { default as HomeProductComponent } from './HomeProduct';
 export { default as ListComponent } from './List';
 export { default as MenuComponent } from './Menu';
 export { default as NavigationHeaderComponent } from './NavigationHeader';
