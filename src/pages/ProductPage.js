@@ -1,44 +1,247 @@
+import { NavLink } from 'react-router-dom';
+
 import '../scss/layouts/product.scss';
-import { HomeProductComponent } from '../PageComponents';
+import { HeartFilledIcon } from '../icons';
 
 function ProductPage() {
     return (
         <div className="ProductPage">
-            <h1>ProductPage</h1>
+            <header className="site-header section-padding d-flex justify-content-center align-items-center">
+                <div className="container">
+                    <div className="row">
+                        <div className="col-lg-10 col-12">
+                            <h1>
+                                <span className="d-block text-primary">Choose your</span>
+                                <span className="d-block text-dark">favorite stuffs</span>
+                            </h1>
+                        </div>
+                    </div>
+                </div>
+            </header>
 
-            <section className="front-product">
-                <div className="container-fluid p-0">
-                    <div className="row align-items-center">
-                        <div className="col-lg-6 col-12">
-                            <img
-                                src="https://i.pinimg.com/564x/75/df/c4/75dfc452c7d3f9dd2c8a4076273ac7ae.jpg"
-                                className="img-fluid object-fit-cover"
-                                alt=""
-                            />
+            <section className="products section-padding">
+                <div className="container">
+                    <div className="row">
+                        <div className="col-12">
+                            <h2 className="mb-5">New Arrivals</h2>
                         </div>
 
-                        <div className="col-lg-6 col-12">
-                            <div className="px-5 py-5 py-lg-0">
-                                <h2 className="mb-4">
-                                    <span>Retail</span> shop owners
-                                </h2>
+                        <div className="col-lg-4 col-12 mb-3">
+                            <div className="product-thumb">
+                                <NavLink to="/product-detail">
+                                    <img
+                                        src="https://i.pinimg.com/564x/5d/4d/40/5d4d400928622b5c7415201f3820ac56.jpg"
+                                        className="img-fluid product-image"
+                                        alt=""
+                                    />
+                                </NavLink>
 
-                                <p className="lead mb-4">
-                                    Credits go to Unsplash and FreePik websites for images used in this Little Fashion
-                                    by Tooplate.
-                                </p>
+                                <div className="product-top d-flex">
+                                    <span className="product-alert me-auto">New Arrival</span>
 
-                                <a href="products.html" className="custom-link">
-                                    Explore Products
-                                    <i className="bi-arrow-right ms-2"></i>
-                                </a>
+                                    <NavLink to="/favorite" className="bi-heart-fill product-icon">
+                                        <HeartFilledIcon />
+                                    </NavLink>
+                                </div>
+
+                                <div className="product-info d-flex">
+                                    <div>
+                                        <h5 className="product-title mb-0">
+                                            <NavLink to="/product-detail" className="product-title-link">
+                                                Tree pot
+                                            </NavLink>
+                                        </h5>
+
+                                        <p className="product-p">Original package design from house</p>
+                                    </div>
+
+                                    <small className="product-price text-muted ms-auto">$25</small>
+                                </div>
                             </div>
+                        </div>
+
+                        <div className="col-lg-4 col-12 mb-3">
+                            <div className="product-thumb">
+                                <NavLink to="/product-detail">
+                                    <img
+                                        src="https://i.pinimg.com/564x/00/3a/16/003a163cb1d3bf99c3b0994a0622fba9.jpg"
+                                        className="img-fluid product-image"
+                                        alt=""
+                                    />
+                                </NavLink>
+
+                                <div className="product-top d-flex">
+                                    <span className="product-alert">Discounted Price</span>
+
+                                    <NavLink to="/favorite" className="bi-heart-fill product-icon ms-auto">
+                                        <HeartFilledIcon />
+                                    </NavLink>
+                                </div>
+
+                                <div className="product-info d-flex">
+                                    <div>
+                                        <h5 className="product-title mb-0">
+                                            <NavLink to="/product-detail" className="product-title-link">
+                                                Fashion set
+                                            </NavLink>
+                                        </h5>
+
+                                        <p className="product-p">Costume package</p>
+                                    </div>
+
+                                    <small className="product-price text-muted ms-auto">$35</small>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="col-lg-4 col-12">
+                            <div className="product-thumb">
+                                <NavLink to="/product-detail">
+                                    <img
+                                        src="https://i.pinimg.com/564x/70/77/a8/7077a83e48a1ccf51c730ccd0964ec68.jpg"
+                                        className="img-fluid product-image"
+                                        alt=""
+                                    />
+                                </NavLink>
+
+                                <div className="product-top d-flex">
+                                    <NavLink to="/favorite" className="bi-heart-fill product-icon ms-auto">
+                                        <HeartFilledIcon />
+                                    </NavLink>
+                                </div>
+
+                                <div className="product-info d-flex">
+                                    <div>
+                                        <h5 className="product-title mb-0">
+                                            <NavLink to="/product-detail" className="product-title-link">
+                                                Juice Drinks
+                                            </NavLink>
+                                        </h5>
+
+                                        <p className="product-p">Nature made another world</p>
+                                    </div>
+
+                                    <small className="product-price text-muted ms-auto">$45</small>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="col-12 text-center">
+                            <NavLink to="products.html" className="view-all">
+                                View All Products
+                            </NavLink>
+                        </div>
+
+                        <div className="mt-5 col-12">
+                            <h2 className="mb-5">Popular</h2>
+                        </div>
+
+                        <div className="col-lg-4 col-12 mb-3">
+                            <div className="product-thumb">
+                                <NavLink to="/product-detail">
+                                    <img
+                                        src="https://i.pinimg.com/564x/52/d0/22/52d022282cdf17a5ef4ae4559204eaaa.jpg"
+                                        className="img-fluid product-image"
+                                        alt=""
+                                    />
+                                </NavLink>
+
+                                <div className="product-top d-flex">
+                                    <span className="product-alert">Trending</span>
+
+                                    <NavLink to="/favorite" className="bi-heart-fill product-icon ms-auto">
+                                        <HeartFilledIcon />
+                                    </NavLink>
+                                </div>
+
+                                <div className="product-info d-flex">
+                                    <div>
+                                        <h5 className="product-title mb-0">
+                                            <NavLink to="/product-detail" className="product-title-link">
+                                                Package
+                                            </NavLink>
+                                        </h5>
+
+                                        <p className="product-p">Original package design from house</p>
+                                    </div>
+
+                                    <small className="product-price text-muted ms-auto">$50</small>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="col-lg-4 col-12 mb-3">
+                            <div className="product-thumb">
+                                <NavLink to="/product-detail">
+                                    <img
+                                        src="https://i.pinimg.com/564x/62/18/d5/6218d527b75512625cc6f77de13a38d8.jpg"
+                                        className="img-fluid product-image"
+                                        alt=""
+                                    />
+                                </NavLink>
+
+                                <div className="product-top d-flex">
+                                    <NavLink to="/favorite" className="bi-heart-fill product-icon ms-auto">
+                                        <HeartFilledIcon />
+                                    </NavLink>
+                                </div>
+
+                                <div className="product-info d-flex">
+                                    <div>
+                                        <h5 className="product-title mb-0">
+                                            <NavLink to="/product-detail" className="product-title-link">
+                                                Bottle
+                                            </NavLink>
+                                        </h5>
+
+                                        <p className="product-p">Package design</p>
+                                    </div>
+
+                                    <small className="product-price text-muted ms-auto">$100</small>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="col-lg-4 col-12 mb-3">
+                            <div className="product-thumb">
+                                <NavLink to="/product-detail">
+                                    <img
+                                        src="https://i.pinimg.com/564x/47/ca/69/47ca69d328cb0338f4d1280e6e949bdc.jpg"
+                                        className="img-fluid product-image"
+                                        alt=""
+                                    />
+                                </NavLink>
+
+                                <div className="product-top d-flex">
+                                    <NavLink to="/favorite" className="bi-heart-fill product-icon ms-auto">
+                                        <HeartFilledIcon />
+                                    </NavLink>
+                                </div>
+
+                                <div className="product-info d-flex">
+                                    <div>
+                                        <h5 className="product-title mb-0">
+                                            <NavLink to="/product-detail" className="product-title-link">
+                                                Medicine
+                                            </NavLink>
+                                        </h5>
+
+                                        <p className="product-p">Original design from house</p>
+                                    </div>
+
+                                    <small className="product-price text-muted ms-auto">$200</small>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="col-12 text-center">
+                            <NavLink to="products.html" className="view-all">
+                                View All Products
+                            </NavLink>
                         </div>
                     </div>
                 </div>
             </section>
-
-            <HomeProductComponent />
         </div>
     );
 }

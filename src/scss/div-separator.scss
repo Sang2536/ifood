@@ -1,0 +1,29 @@
+/*---------------------------------------
+  DIV SEPARATOR               
+-----------------------------------------*/
+.div-separator {
+  position: relative;
+}
+
+.div-separator::before {
+  content: "";
+  height: 1px;
+  background: var(--grey-color);
+  display: block;
+  width: 100%;
+}
+
+.div-separator span {
+  position: absolute;
+  top: 50%;
+  margin-left: -22.5px;
+  left: 50%;
+  text-align: center;
+  background: var(--white-color);
+  margin-top: -11px;
+  color: var(--dark-color);
+  font-weight: var(--font-weight-bold);
+  font-size: 14px;
+  width: 35px;
+  text-transform: uppercase;
+}

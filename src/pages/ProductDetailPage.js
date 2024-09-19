@@ -1,5 +1,8 @@
+import { NavLink } from 'react-router-dom';
+
 import '../scss/layouts/product.scss';
 import { CartModalComponent } from '../PageComponents';
+import { HeartFilledIcon } from '../icons';
 
 function ProductDetailPage() {
     return (
@@ -74,13 +77,13 @@ function ProductDetailPage() {
                                 </div>
 
                                 <p>
-                                    <a href="#" className="product-additional-link">
+                                    <NavLink to="#" className="product-additional-link">
                                         Details
-                                    </a>
+                                    </NavLink>
 
-                                    <a href="#" className="product-additional-link">
+                                    <NavLink to="#" className="product-additional-link">
                                         Delivery and Payment
-                                    </a>
+                                    </NavLink>
                                 </p>
                             </div>
                         </div>
@@ -97,20 +100,22 @@ function ProductDetailPage() {
 
                         <div className="col-lg-4 col-12 mb-3">
                             <div className="product-thumb">
-                                <a href="product-detail.html">
+                                <NavLink to="/product-detail">
                                     <img src="https://i.pinimg.com/564x/fd/73/fd/fd73fd73e03875ee55d15588c4deee74.jpg" className="img-fluid product-image" alt="" />
-                                </a>
+                                </NavLink>
 
                                 <div className="product-top d-flex">
                                     <span className="product-alert me-auto">New arrival</span>
 
-                                    <a href="#" className="bi-heart-fill product-icon"></a>
+                                    <NavLink to="/favorite" className="bi-heart-fill product-icon">
+                                        <HeartFilledIcon />
+                                    </NavLink>
                                 </div>
 
                                 <div className="product-info d-flex">
                                     <div>
                                         <h5 className="product-title mb-0">
-                                            <a href="product-detail.html" className="product-title-link">Tree pot</a>
+                                            <NavLink to="/product-detail" className="product-title-link">Tree pot</NavLink>
                                         </h5>
 
                                         <p className="product-p">Original package design from house</p>
@@ -123,20 +128,22 @@ function ProductDetailPage() {
 
                         <div className="col-lg-4 col-12 mb-3">
                             <div className="product-thumb">
-                                <a href="product-detail.html">
+                                <NavLink to="/product-detail">
                                     <img src="https://i.pinimg.com/564x/80/99/4f/80994f4d0f232f319ba15f5e5a1a907c.jpg" className="img-fluid product-image" alt="" />
-                                </a>
+                                </NavLink>
 
                                 <div className="product-top d-flex">
                                     <span className="product-alert">Low Price</span>
 
-                                    <a href="#" className="bi-heart-fill product-icon ms-auto"></a>
+                                    <NavLink to="/favorite" className="bi-heart-fill product-icon ms-auto">
+                                        <HeartFilledIcon />
+                                    </NavLink>
                                 </div>
 
                                 <div className="product-info d-flex">
                                     <div>
                                         <h5 className="product-title mb-0">
-                                            <a href="product-detail.html" className="product-title-link">Fashion set</a>
+                                            <NavLink to="/product-detail" className="product-title-link">Fashion set</NavLink>
                                         </h5>
 
                                         <p className="product-p">Costume package</p>
@@ -149,18 +156,20 @@ function ProductDetailPage() {
 
                         <div className="col-lg-4 col-12">
                             <div className="product-thumb">
-                                <a href="product-detail.html">
+                                <NavLink to="/product-detail">
                                     <img src="https://i.pinimg.com/564x/46/15/51/4615516d8b34ce2621b44447cd767a72.jpg" className="img-fluid product-image" alt="" />
-                                </a>
+                                </NavLink>
 
                                 <div className="product-top d-flex">
-                                    <a href="#" className="bi-heart-fill product-icon ms-auto"></a>
+                                    <NavLink to="/favorite" className="bi-heart-fill product-icon ms-auto">
+                                        <HeartFilledIcon />
+                                    </NavLink>
                                 </div>
 
                                 <div className="product-info d-flex">
                                     <div>
                                         <h5 className="product-title mb-0">
-                                            <a href="product-detail.html" className="product-title-link">Juice Drinks</a>
+                                            <NavLink to="/product-detail" className="product-title-link">Juice Drinks</NavLink>
                                         </h5>
 
                                         <p className="product-p">Nature made another world</p>
