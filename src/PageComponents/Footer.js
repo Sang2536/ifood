@@ -1,3 +1,6 @@
+import { NavLink } from 'react-router-dom';
+
+import { publicRoutes } from '../routes';
 import '../scss/PageComponents/footer.scss';
 import {
     BrandFacebookIcon,
@@ -11,14 +14,16 @@ import {
     BrandWhatsappIcon,
 } from '../icons';
 
-function FooterComponent () {
+function FooterComponent() {
     return (
         <footer className="footer-component site-footer" style={{ backgroundColor: '#000000' }}>
             <div className="container">
                 <div className="row">
                     <div className="col-lg-3 col-10 me-auto mb-4">
                         <h4 className="text-white mb-3">
-                            <a href="link-home">iFood</a>
+                            <NavLink to="/" className="">
+                                iFood
+                            </NavLink>
                         </h4>
                         <p className="copyright-text text-muted mt-lg-5 mb-4 mb-lg-0">
                             Copyright © 2022 <strong>iFood</strong>
@@ -26,9 +31,9 @@ function FooterComponent () {
                         <br />
                         <p className="copyright-text">
                             Designed by{' '}
-                            <a href="link-home" target="_blank">
+                            <NavLink to="/" className="" target="_blank">
                                 iFood
-                            </a>
+                            </NavLink>
                         </p>
                     </div>
 
@@ -36,29 +41,29 @@ function FooterComponent () {
                         <h5 className="text-white mb-3">Sitemap</h5>
                         <ul className="footer-menu d-flex flex-wrap">
                             <li className="footer-menu-item">
-                                <a href="link-about" className="footer-menu-link">
+                                <NavLink to="/story" className="footer-menu-link">
                                     Story
-                                </a>
+                                </NavLink>
                             </li>
                             <li className="footer-menu-item">
-                                <a href="link-product" className="footer-menu-link">
-                                    Products
-                                </a>
+                                <NavLink to="/product" className="footer-menu-link">
+                                    Product
+                                </NavLink>
                             </li>
                             <li className="footer-menu-item">
-                                <a href="link-privacy-policy" className="footer-menu-link">
+                                <NavLink to="/privacy-policy" className="footer-menu-link">
                                     Privacy policy
-                                </a>
+                                </NavLink>
                             </li>
                             <li className="footer-menu-item">
-                                <a href="link-faq" className="footer-menu-link">
+                                <NavLink to="/faq" className="footer-menu-link">
                                     FAQs
-                                </a>
+                                </NavLink>
                             </li>
                             <li className="footer-menu-item">
-                                <a href="link-contact" className="footer-menu-link">
+                                <NavLink to="/contact" className="footer-menu-link">
                                     Contact
-                                </a>
+                                </NavLink>
                             </li>
                         </ul>
                     </div>

@@ -1,3 +1,6 @@
+import { NavLink } from 'react-router-dom';
+
+import { publicRoutes } from '../routes';
 import '../scss/PageComponents/navigation-header.scss';
 import { UserIcon, ShoppingBagIcon } from '../icons';
 
@@ -18,63 +21,63 @@ function NavigationHeaderComponent () {
                         <span className="navbar-toggler-icon"></span>
                     </button>
 
-                    <a className="navbar-brand" href="link-home">
+                    <NavLink to="/" className="navbar-brand">
                         <strong>
                             <span>iFood</span> Shop
                         </strong>
-                    </a>
+                    </NavLink>
 
                     <div className="d-lg-none">
-                        <a href="link-sign-in" className="bi-person custom-icon me-3">
+                        <NavLink to="/sign-in" className="bi-person custom-icon me-3">
                             <UserIcon />
-                        </a>
+                        </NavLink>
 
-                        <a href="link-product-detail" className="bi-bag custom-icon">
-                            <ShoppingBagIcon />{' '}
-                        </a>
+                        <NavLink to="/product-detail" className="bi-bag custom-icon">
+                            <ShoppingBagIcon />
+                        </NavLink>
                     </div>
 
                     <div className="collapse navbar-collapse" id="navbarNav">
                         <ul className="navbar-nav mx-auto">
                             <li className="nav-item">
-                                <a className="nav-link active" href="link-home">
+                                <NavLink to="/" className="nav-link" activeClassName="active">
                                     Home
-                                </a>
+                                </NavLink>
                             </li>
 
                             <li className="nav-item">
-                                <a className="nav-link" href="link-about">
+                                <NavLink to="/story" className="nav-link" activeClassName="active">
                                     Story
-                                </a>
+                                </NavLink>
                             </li>
 
                             <li className="nav-item">
-                                <a className="nav-link" href="link-product">
-                                    Products
-                                </a>
+                                <NavLink to="/product" className="nav-link" activeClassName="active">
+                                    Product
+                                </NavLink>
                             </li>
 
                             <li className="nav-item">
-                                <a className="nav-link" href="link-faq">
+                                <NavLink to="/faq" className="nav-link" activeClassName="active">
                                     FAQs
-                                </a>
+                                </NavLink>
                             </li>
 
                             <li className="nav-item">
-                                <a className="nav-link" href="link-contact">
+                                <NavLink to="/contact" className="nav-link" activeClassName="active">
                                     Contact
-                                </a>
+                                </NavLink>
                             </li>
                         </ul>
 
                         <div className="d-flex">
-                            <a href="link-sign-in" className="bi-person custom-icon me-3">
+                            <NavLink to="/sign-in" className="bi-person custom-icon me-3">
                                 <UserIcon />
-                            </a>
+                            </NavLink>
 
-                            <a href="nk-product-detail" className="bi-bag custom-icon">
+                            <NavLink to="/product-detail" className="bi-bag custom-icon">
                                 <ShoppingBagIcon />
-                            </a>
+                            </NavLink>
                         </div>
                     </div>
                 </div>
