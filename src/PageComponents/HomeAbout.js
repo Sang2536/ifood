@@ -1,4 +1,4 @@
-import '../scss/about.scss';
+import '../scss/layouts/about.scss';
 import '../scss/section.scss';
 import { Image } from '../SingleComponents';
 

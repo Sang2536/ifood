@@ -1,4 +1,4 @@
-import '../scss/PageLayouts/product.scss';
+import '../scss/layouts/product.scss';
 import { CarouselComponent, ContentComponent, HomeAboutComponent, HomeProductComponent } from '../PageComponents';
 
 function HomePage() {

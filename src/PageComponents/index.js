@@ -1,6 +1,7 @@
 export { default as CardComponent } from './Card';
 export { default as ContentComponent } from './Content';
 export { default as CarouselComponent } from './Carousel';
+export { default as CartModalComponent } from './CartModal';
 export { default as ContentComp } from './Content';
 export { default as FooterComponent } from './Footer';
 export { default as FormComponent } from './Form';
