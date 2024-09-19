@@ -1,6 +1,7 @@
 import '../scss/PageComponents/carousel.scss';
 import '../scss/custom-btn.scss';
 import { Image } from '../SingleComponents';
+import { NavLink } from 'react-router-dom';
 
 function CarouselComponent() {
     return (
@@ -87,9 +88,9 @@ function CarouselComponent() {
                                             website.
                                         </p>
 
-                                        <a href="about.html" className="btn custom-btn">
+                                        <NavLink to="/story" className="btn custom-btn">
                                             Learn more about us
-                                        </a>
+                                        </NavLink>
                                     </div>
                                 </div>
                             </div>
@@ -112,9 +113,9 @@ function CarouselComponent() {
                                             website.
                                         </p>
 
-                                        <a href="about.html" className="btn custom-btn">
+                                        <NavLink to="/story" className="btn custom-btn">
                                             Learn more about us
-                                        </a>
+                                        </NavLink>
                                     </div>
                                 </div>
                             </div>
@@ -136,9 +137,9 @@ function CarouselComponent() {
                                             Tooplate is one of the best HTML CSS template websites for everyone.
                                         </p>
 
-                                        <a href="contact.html" className="btn custom-btn">
+                                        <NavLink to="/contact" className="btn custom-btn">
                                             Work with us
-                                        </a>
+                                        </NavLink>
                                     </div>
                                 </div>
                             </div>

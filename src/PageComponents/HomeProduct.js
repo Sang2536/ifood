@@ -1,5 +1,8 @@
+import { NavLink } from 'react-router-dom';
+
 import '../scss/layouts/product.scss';
 import { Image } from '../SingleComponents';
+import { HeartFilledIcon } from '../icons';
 
 function HomeProductComponent() {
     return (
@@ -13,26 +16,28 @@ function HomeProductComponent() {
 
                         <div className="col-lg-4 col-12 mb-3">
                             <div className="product-thumb">
-                                <a href="product-detail.html">
+                                <NavLink to="/product-detail">
                                     <img
                                         src="https://i.pinimg.com/564x/56/f9/62/56f962d9e08a521d551be872159651ed.jpg"
                                         className="img-fluid product-image"
                                         alt=""
                                     />
-                                </a>
+                                </NavLink>
 
                                 <div className="product-top d-flex">
                                     <span className="product-alert me-auto">New Arrival</span>
 
-                                    <a href="#" className="bi-heart-fill product-icon"></a>
+                                    <NavLink to="/favorite" className="bi-heart-fill product-icon">
+                                        <HeartFilledIcon />
+                                    </NavLink>
                                 </div>
 
                                 <div className="product-info d-flex">
                                     <div>
                                         <h5 className="product-title mb-0">
-                                            <a href="product-detail.html" className="product-title-link">
+                                            <NavLink to="/product-detail" className="product-title-link">
                                                 Tree pot
-                                            </a>
+                                            </NavLink>
                                         </h5>
 
                                         <p className="product-p">Original package design from house</p>
@@ -45,26 +50,28 @@ function HomeProductComponent() {
 
                         <div className="col-lg-4 col-12 mb-3">
                             <div className="product-thumb">
-                                <a href="product-detail.html">
+                                <NavLink to="/product-detail">
                                     <img
                                         src="https://i.pinimg.com/564x/3c/75/d9/3c75d96bd31b762788cab9ede0dbe245.jpg"
                                         className="img-fluid product-image"
                                         alt=""
                                     />
-                                </a>
+                                </NavLink>
 
                                 <div className="product-top d-flex">
                                     <span className="product-alert">Low Price</span>
 
-                                    <a href="#" className="bi-heart-fill product-icon ms-auto"></a>
+                                    <NavLink to="/favorite" className="bi-heart-fill product-icon ms-auto">
+                                        <HeartFilledIcon />
+                                    </NavLink>
                                 </div>
 
                                 <div className="product-info d-flex">
                                     <div>
                                         <h5 className="product-title mb-0">
-                                            <a href="product-detail.html" className="product-title-link">
+                                            <NavLink to="/product-detail" className="product-title-link">
                                                 Fashion Set
-                                            </a>
+                                            </NavLink>
                                         </h5>
 
                                         <p className="product-p">Costume Package</p>
@@ -77,24 +84,26 @@ function HomeProductComponent() {
 
                         <div className="col-lg-4 col-12">
                             <div className="product-thumb">
-                                <a href="product-detail.html">
+                                <NavLink to="/product-detail">
                                     <img
                                         src="https://i.pinimg.com/564x/34/9c/97/349c9742c4eb84193293e0308613f84c.jpg"
                                         className="img-fluid product-image"
                                         alt=""
                                     />
-                                </a>
+                                </NavLink>
 
                                 <div className="product-top d-flex">
-                                    <a href="#" className="bi-heart-fill product-icon ms-auto"></a>
+                                    <NavLink to="/favorite" className="bi-heart-fill product-icon ms-auto">
+                                        <HeartFilledIcon />
+                                    </NavLink>
                                 </div>
 
                                 <div className="product-info d-flex">
                                     <div>
                                         <h5 className="product-title mb-0">
-                                            <a href="product-detail.html" className="product-title-link">
+                                            <NavLink to="/product-detail" className="product-title-link">
                                                 Juice Drinks
-                                            </a>
+                                            </NavLink>
                                         </h5>
 
                                         <p className="product-p">Nature made another world</p>
@@ -106,9 +115,9 @@ function HomeProductComponent() {
                         </div>
 
                         <div className="col-12 text-center">
-                            <a href="products.html" className="view-all">
+                            <NavLink to="/product" className="view-all">
                                 View All Products
-                            </a>
+                            </NavLink>
                         </div>
                     </div>
                 </div>

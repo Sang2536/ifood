@@ -1,6 +1,9 @@
+import { NavLink } from 'react-router-dom';
+
 import '../scss/layouts/about.scss';
 import '../scss/section.scss';
 import { Image } from '../SingleComponents';
+import { ArrowRightIcon } from '../icons';
 
 function HomeAboutComponent() {
     return (
@@ -93,8 +96,8 @@ function HomeAboutComponent() {
 
                                                 <p>
                                                     Little Fashion templates comes with{' '}
-                                                    <a href="sign-in.html">sign in</a> /{' '}
-                                                    <a href="sign-up.html">sign up</a> pages, product listing / product
+                                                    <NavLink to="/sign-in">sign in</NavLink> /{' '}
+                                                    <NavLink to="/sign-up">sign up</NavLink> pages, product listing / product
                                                     detail, about, FAQs, and contact page.
                                                 </p>
 
@@ -104,10 +107,12 @@ function HomeAboutComponent() {
                                                 </p>
 
                                                 <div className="mt-2 mt-lg-auto">
-                                                    <a href="about.html" className="custom-link mb-2">
+                                                    <NavLink to="/story" className="custom-link mb-2">
                                                         Learn more about us
-                                                        <i className="bi-arrow-right ms-2"></i>
-                                                    </a>
+                                                        <i className="bi-arrow-right ms-2">
+                                                            <ArrowRightIcon />
+                                                        </i>
+                                                    </NavLink>
                                                 </div>
                                             </div>
                                         </div>
@@ -145,10 +150,12 @@ function HomeAboutComponent() {
                                                 <p>Custom work is branding, web design, UI/UX design</p>
 
                                                 <div className="mt-2 mt-lg-auto">
-                                                    <a href="contact.html" className="custom-link mb-2">
+                                                    <NavLink to="/contact" className="custom-link mb-2">
                                                         Work with us
-                                                        <i className="bi-arrow-right ms-2"></i>
-                                                    </a>
+                                                        <i className="bi-arrow-right ms-2">
+                                                            <ArrowRightIcon />
+                                                        </i>
+                                                    </NavLink>
                                                 </div>
                                             </div>
                                         </div>
@@ -224,10 +231,12 @@ function HomeAboutComponent() {
                                                 </div>
 
                                                 <div className="mt-2 mt-lg-auto">
-                                                    <a href="products.html" className="custom-link mb-2">
+                                                    <NavLink to="/product" className="custom-link mb-2">
                                                         Explore products
-                                                        <i className="bi-arrow-right ms-2"></i>
-                                                    </a>
+                                                        <i className="bi-arrow-right ms-2">
+                                                            <ArrowRightIcon />
+                                                        </i>
+                                                    </NavLink>
                                                 </div>
                                             </div>
                                         </div>

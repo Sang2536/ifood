@@ -72,49 +72,49 @@ function FooterComponent() {
                         <h5 className="text-white mb-3">Social</h5>
                         <ul className="social-icon">
                             <li>
-                                <a href="link-youtube" className="social-icon-link bi-youtube">
+                                <NavLink to="/link-youtube" className="social-icon-link bi-youtube">
                                     <BrandYoutubeIcon />
-                                </a>
+                                </NavLink>
                             </li>
                             <li>
-                                <a href="link-facebook" className="social-icon-link bi-facebook">
+                                <NavLink to="/link-facebook" className="social-icon-link bi-facebook">
                                     <BrandFacebookIcon />
-                                </a>
+                                </NavLink>
                             </li>
                             <li>
-                                <a href="link-twitter" className="social-icon-link bi-twitter">
+                                <NavLink to="/link-twitter" className="social-icon-link bi-twitter">
                                     <BrandTwitterIcon />
-                                </a>
+                                </NavLink>
                             </li>
                             <li>
-                                <a href="link-instagram" className="social-icon-link bi-instagram">
+                                <NavLink to="/link-instagram" className="social-icon-link bi-instagram">
                                     <BrandInstagramIcon />
-                                </a>
+                                </NavLink>
                             </li>
                             <li>
-                                <a href="link-tiktok" className="social-icon-link bi-tiktok">
+                                <NavLink to="/link-tiktok" className="social-icon-link bi-tiktok">
                                     <BrandTiktokIcon />
-                                </a>
+                                </NavLink>
                             </li>
                             <li>
-                                <a href="link-gmail" className="social-icon-link bi-gmail">
+                                <NavLink to="/link-gmail" className="social-icon-link bi-gmail">
                                     <BrandGmailIcon />
-                                </a>
+                                </NavLink>
                             </li>
                             <li>
-                                <a href="link-telegram" className="social-icon-link bi-telegram">
+                                <NavLink to="/link-telegram" className="social-icon-link bi-telegram">
                                     <BrandTelegramIcon />
-                                </a>
+                                </NavLink>
                             </li>
                             <li>
-                                <a href="link-whatsapp" className="social-icon-link bi-whatsapp">
+                                <NavLink to="/link-whatsapp" className="social-icon-link bi-whatsapp">
                                     <BrandWhatsappIcon />
-                                </a>
+                                </NavLink>
                             </li>
                             <li>
-                                <a href="link-skype" className="social-icon-link bi-skype">
+                                <NavLink to="/link-skype" className="social-icon-link bi-skype">
                                     <BrandSkypeIcon />
-                                </a>
+                                </NavLink>
                             </li>
                         </ul>
                     </div>

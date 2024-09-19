@@ -1,3 +1,4 @@
+import { NavLink } from 'react-router-dom';
 import '../scss/PageComponents/side-header.scss';
 
 function SignInPage() {
@@ -42,7 +43,7 @@ function SignInPage() {
                                         </button>
 
                                         <p className="text-center">
-                                            Don’t have an account? <a href="sign-up.html">Create One</a>
+                                            Don’t have an account? <NavLink to="/sign-up">Create One</NavLink>
                                         </p>
                                     </form>
                                 </div>
