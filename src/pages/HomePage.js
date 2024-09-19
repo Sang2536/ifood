@@ -1,5 +1,8 @@
+import { NavLink } from 'react-router-dom';
+
 import '../scss/layouts/product.scss';
-import { CarouselComponent, ContentComponent, HomeAboutComponent, HomeProductComponent } from '../PageComponents';
+import { CarouselComponent, HomeAboutComponent, HomeProductComponent } from '../PageComponents';
+import { ArrowRightIcon } from '../icons';
 
 function HomePage() {
     return (
@@ -30,10 +33,12 @@ function HomePage() {
                                     by Tooplate.
                                 </p>
 
-                                <a href="products.html" className="custom-link">
+                                <NavLink to="/product" className="custom-link">
                                     Explore Products
-                                    <i className="bi-arrow-right ms-2"></i>
-                                </a>
+                                    <i className="bi-arrow-right ms-2">
+                                        <ArrowRightIcon />
+                                    </i>
+                                </NavLink>
                             </div>
                         </div>
                     </div>
