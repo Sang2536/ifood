@@ -2,9 +2,13 @@ export { default as ActivityIcon } from './ActivityIcon';
 export { default as AlertCircleFilledIcon } from './AlertCircleFilledIcon';
 export { default as ApiIcon } from './ApiIcon';
 export { default as ArrowBackUpIcon } from './ArrowBackUpIcon';
+export { default as ArrowBadgeLeftFilledIcon } from './ArrowBadgeLeftFilledIcon';
+export { default as ArrowBadgeRightFilledIcon } from './ArrowBadgeRightFilledIcon';
 export { default as ArrowBarRightIcon } from './ArrowBarRightIcon';
 export { default as ArrowBarToDownIcon } from './ArrowBarToDownIcon';
 export { default as ArrowBarUpIcon } from './ArrowBarUpIcon';
+export { default as ArrowLeftIcon } from './ArrowLeftIcon';
+export { default as ArrowRightIcon } from './ArrowRightIcon';
 export { default as ArticleFilledIcon } from './ArticleFilledIcon';
 export { default as AwardFilledIcon } from './AwardFilledIcon';
 
@@ -40,14 +44,17 @@ export { default as ChartAreaLineFilledIcon } from './ChartAreaLineFilledIcon';
 export { default as ChartDonutFilledIcon } from './ChartDonutFilledIcon';
 export { default as ChartPieFilledIcon } from './ChartPieFilledIcon';
 export { default as CheckIcon } from './CheckIcon';
+export { default as ChevronDownIcon } from './ChevronDownIcon';
 export { default as CircleCheckFilledIcon } from './CircleCheckFilledIcon';
 export { default as CirclePlusFilledIcon } from './CirclePlusFilledIcon';
 export { default as CircleXFilledIcon } from './CircleXFilledIcon';
 export { default as ClockFilledIcon } from './ClockFilledIcon';
 export { default as CreditCardFilledIcon } from './CreditCardFilledIcon';
 
+export { default as DatabaseIcon } from './DatabaseIcon';
 export { default as DeviceUnknownFilledIcon } from './DeviceUnknownFilledIcon';
 export { default as DiscountFilledIcon } from './DiscountFilledIcon';
+export { default as DotsIcon } from './DotsIcon';
 
 export { default as ExclamationCircleFilledIcon } from './ExclamationCircleFilledIcon';
 
@@ -63,7 +70,10 @@ export { default as HomeFilledIcon } from './HomeFilledIcon';
 
 export { default as InfoCircleFilledIcon } from './InfoCircleFilledIcon';
 
+export { default as KeyFilledIcon } from './KeyFilledIcon';
+
 export { default as LayoutFilledIcon } from './LayoutFilledIcon';
+export { default as ListDetailsIcon } from './ListDetailsIcon';
 export { default as LocationFilledIcon } from './LocationFilledIcon';
 export { default as LockIcon } from './LockIcon';
 export { default as LockOpenIcon } from './LockOpenIcon';
@@ -88,6 +98,8 @@ export { default as StarHalfFilledIcon } from './StarHalfFilledIcon';
 export { default as StarIcon } from './StarIcon';
 
 export { default as TagsFilledIcon } from './TagsFilledIcon';
+export { default as TransformFilledIcon } from './TransformFilledIcon';
+export { default as TrashIcon } from './TrashIcon';
 export { default as TrashXFilledIcon } from './TrashXFilledIcon';
 
 export { default as UserCircleIcon } from './UserCircleIcon';
