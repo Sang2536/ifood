@@ -1,0 +1,34 @@
+
+/*---------------------------------------
+  FULL IMAGE               
+-----------------------------------------*/
+.full-image-img {
+  display: block;
+  position: absolute;
+  z-index: -1;
+  right: 0;
+  width: 100%;
+  bottom: -120px;
+  min-width: 650px;
+}
+
+@media (min-width: 1600px) {
+  .full-image-img {
+    bottom: -200px;
+  }
+}
+
+
+/*---------------------------------------
+  CIRCLE IMAGES               
+-----------------------------------------*/
+.custom-circle-image {
+  border-radius: 100px;
+  width: 55px;
+  height: 55px;
+}
+
+.custom-circle-image.team-image {
+  width: 85px;
+  height: 85px;
+}
