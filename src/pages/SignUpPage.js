@@ -1,5 +1,8 @@
 import { NavLink } from "react-router-dom";
 
+import '../scss/div-separator.scss';
+import { BrandFacebookFilledIcon, BrandGoogleFilledIcon } from "../icons";
+
 function SignUpPage() {
     return (
         <div className="sign-up-page">
@@ -11,12 +14,12 @@ function SignUpPage() {
 
                             <div className="social-login d-flex flex-column w-50 m-auto">
                                 <NavLink to="#" className="btn custom-btn social-btn mb-4">
-                                    <i className="bi bi-google me-3"></i>
+                                    <BrandGoogleFilledIcon width="1.2rem" height="1.2rem" className="me-1" />
                                     Continue with Google
                                 </NavLink>
 
                                 <NavLink to="#" className="btn custom-btn social-btn">
-                                    <i className="bi bi-facebook me-3"></i>
+                                    <BrandFacebookFilledIcon width="1.2rem" height="1.2rem" className="me-1" />
                                     Continue with Facebook
                                 </NavLink>
                             </div>

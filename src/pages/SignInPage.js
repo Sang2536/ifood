@@ -43,7 +43,7 @@ function SignInPage() {
                                         </button>
 
                                         <p className="text-center">
-                                            Don’t have an account? <NavLink to="/sign-up">Create One</NavLink>
+                                            Don’t have an account? <NavLink to="/sign-up">Create New</NavLink>
                                         </p>
                                     </form>
                                 </div>

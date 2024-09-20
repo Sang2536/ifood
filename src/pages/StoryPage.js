@@ -1,7 +1,7 @@
 import '../scss/custom-img.scss';
 import '../scss/testimonial.scss';
 
-function StoryPage() {
+function StoryPage() { 
     return (
         <div className="story-page">
             <header className="site-header section-padding-img site-header-image">

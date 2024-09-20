@@ -14,8 +14,48 @@ function App() {
                         <span className="sk-inner-circle"></span>
                     </div>
                 </section>
-                
-                <main>
+
+                <Routes>
+                    {publicRoutes.map((route, index) => {
+                        const Page = route.component;
+                        const noLayout = route.noLayout;
+
+                        if (noLayout === true) {
+                            return (
+                                <Route
+                                    key={index}
+                                    path={route.path}
+                                    element={
+                                        <main>
+                                            <Page />
+                                        </main>
+                                    }
+                                ></Route>
+                            );
+                        } else {
+                            return (
+                                <Route 
+                                    key={index} 
+                                    path={route.path} 
+                                    element={
+                                        <Fragment>
+                                            <main>
+                                                <NavigationHeaderComponent />
+
+                                                <Page />
+                                            </main>
+
+                                            <FooterComponent />
+                                        </Fragment>
+                                    }
+                                >
+                                </Route>
+                            );
+                        }
+                    })}
+                </Routes>
+
+                {/* <main>
                     <NavigationHeaderComponent />
                     
                     <Routes>
@@ -27,7 +67,7 @@ function App() {
                     </Routes>
                 </main>
 
-                <FooterComponent />
+                <FooterComponent /> */}
             </div>
         </BrowserRouter>
     );
