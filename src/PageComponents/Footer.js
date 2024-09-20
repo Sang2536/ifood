@@ -1,7 +1,7 @@
 import { NavLink } from 'react-router-dom';
 
-import { publicRoutes } from '../routes';
 import '../scss/PageComponents/footer.scss';
+import configs from '../configs';
 import {
     BrandFacebookIcon,
     BrandGmailIcon,
@@ -21,7 +21,7 @@ function FooterComponent() {
                 <div className="row">
                     <div className="col-lg-3 col-10 me-auto mb-4">
                         <h4 className="text-white mb-3">
-                            <NavLink to="/" className="">
+                            <NavLink to={configs.routes.home} className="">
                                 iFood
                             </NavLink>
                         </h4>
@@ -31,7 +31,7 @@ function FooterComponent() {
                         <br />
                         <p className="copyright-text">
                             Designed by{' '}
-                            <NavLink to="/" className="" target="_blank">
+                            <NavLink to={configs.routes.home} className="" target="_blank">
                                 iFood
                             </NavLink>
                         </p>
@@ -41,12 +41,12 @@ function FooterComponent() {
                         <h5 className="text-white mb-3">Sitemap</h5>
                         <ul className="footer-menu d-flex flex-wrap">
                             <li className="footer-menu-item">
-                                <NavLink to="/story" className="footer-menu-link">
+                                <NavLink to={ configs.routes.story } className="footer-menu-link">
                                     Story
                                 </NavLink>
                             </li>
                             <li className="footer-menu-item">
-                                <NavLink to="/product" className="footer-menu-link">
+                                <NavLink to={ configs.routes.product } className="footer-menu-link">
                                     Product
                                 </NavLink>
                             </li>
@@ -56,12 +56,12 @@ function FooterComponent() {
                                 </NavLink>
                             </li>
                             <li className="footer-menu-item">
-                                <NavLink to="/faq" className="footer-menu-link">
+                                <NavLink to={ configs.routes.faq } className="footer-menu-link">
                                     FAQs
                                 </NavLink>
                             </li>
                             <li className="footer-menu-item">
-                                <NavLink to="/contact" className="footer-menu-link">
+                                <NavLink to={ configs.routes.contact } className="footer-menu-link">
                                     Contact
                                 </NavLink>
                             </li>

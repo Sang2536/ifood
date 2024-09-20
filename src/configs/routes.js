@@ -3,17 +3,17 @@ const routes = {
     error: '/error',
     faq: '/faq',
     home: '/',
-    payment: '/@:nickname/@:transaction/payment',
+    payment: '/@:uid/@:transaction/payment',
     productDetail: '/product-detail',
     product: '/product',
-    profile: '/@:nickname/profile',
+    profile: '/@:uid/profile',
     search: '/search',
-    setting: '/@:nickname/setting',
-    shoppingCart: '/@:nickname/shopping-cart',
+    setting: '/@:uid/setting',
+    shoppingCart: '/@:uid/shopping-cart',
     signIn: '/sign-in',
     signUp: '/sign-up',
     story: '/story',
-    transaction: '/@:nickname/transaction',
+    transaction: '/@:uid/transaction',
 };
 
 export default routes;

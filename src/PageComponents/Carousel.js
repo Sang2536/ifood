@@ -1,7 +1,9 @@
+import { NavLink } from 'react-router-dom';
+
 import '../scss/PageComponents/carousel.scss';
 import '../scss/custom-btn.scss';
+import configs from '../configs';
 import { Image } from '../SingleComponents';
-import { NavLink } from 'react-router-dom';
 
 function CarouselComponent() {
     return (
@@ -88,7 +90,7 @@ function CarouselComponent() {
                                             website.
                                         </p>
 
-                                        <NavLink to="/story" className="btn custom-btn">
+                                        <NavLink to={ configs.routes.story } className="btn custom-btn">
                                             Learn more about us
                                         </NavLink>
                                     </div>
@@ -113,7 +115,7 @@ function CarouselComponent() {
                                             website.
                                         </p>
 
-                                        <NavLink to="/story" className="btn custom-btn">
+                                        <NavLink to={ configs.routes.story } className="btn custom-btn">
                                             Learn more about us
                                         </NavLink>
                                     </div>
@@ -137,7 +139,7 @@ function CarouselComponent() {
                                             Tooplate is one of the best HTML CSS template websites for everyone.
                                         </p>
 
-                                        <NavLink to="/contact" className="btn custom-btn">
+                                        <NavLink to={ configs.routes.contact } className="btn custom-btn">
                                             Work with us
                                         </NavLink>
                                     </div>

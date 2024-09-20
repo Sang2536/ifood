@@ -1,6 +1,7 @@
 import { NavLink } from 'react-router-dom';
 
 import '../scss/layouts/product.scss';
+import configs from '../configs';
 import { HeartFilledIcon } from '../icons';
 
 function ProductPage() {
@@ -19,6 +20,31 @@ function ProductPage() {
                 </div>
             </header>
 
+            <section className="section-padding pb-0">
+                <div className="container">
+                    <div className="row align-items-center text-center">
+                        <div className="col-lg-8 mx-auto col-12">
+                            <form role="form" method="post">
+                                <div className="form-floating">
+                                    <input
+                                        type="text"
+                                        name="search"
+                                        id="search"
+                                        pattern="[0-9a-zA-Z]"
+                                        className="form-control"
+                                        placeholder="Search Product"
+                                    />
+                                    <label for="search">Search Product</label>
+                                </div>
+                                <button type="submit" className="btn custom-btn form-control w-50 m-auto mt-4 mb-3">
+                                    Search
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
             <section className="products section-padding">
                 <div className="container">
                     <div className="row">
@@ -28,7 +54,7 @@ function ProductPage() {
 
                         <div className="col-lg-4 col-12 mb-3">
                             <div className="product-thumb">
-                                <NavLink to="/product-detail">
+                                <NavLink to={ configs.routes.productDetail }>
                                     <img
                                         src="https://i.pinimg.com/564x/5d/4d/40/5d4d400928622b5c7415201f3820ac56.jpg"
                                         className="img-fluid product-image"
@@ -47,7 +73,7 @@ function ProductPage() {
                                 <div className="product-info d-flex">
                                     <div>
                                         <h5 className="product-title mb-0">
-                                            <NavLink to="/product-detail" className="product-title-link">
+                                            <NavLink to={ configs.routes.productDetail } className="product-title-link">
                                                 Tree pot
                                             </NavLink>
                                         </h5>
@@ -62,7 +88,7 @@ function ProductPage() {
 
                         <div className="col-lg-4 col-12 mb-3">
                             <div className="product-thumb">
-                                <NavLink to="/product-detail">
+                                <NavLink to={ configs.routes.productDetail }>
                                     <img
                                         src="https://i.pinimg.com/564x/00/3a/16/003a163cb1d3bf99c3b0994a0622fba9.jpg"
                                         className="img-fluid product-image"
@@ -81,7 +107,7 @@ function ProductPage() {
                                 <div className="product-info d-flex">
                                     <div>
                                         <h5 className="product-title mb-0">
-                                            <NavLink to="/product-detail" className="product-title-link">
+                                            <NavLink to={ configs.routes.productDetail } className="product-title-link">
                                                 Fashion set
                                             </NavLink>
                                         </h5>
@@ -96,7 +122,7 @@ function ProductPage() {
 
                         <div className="col-lg-4 col-12">
                             <div className="product-thumb">
-                                <NavLink to="/product-detail">
+                                <NavLink to={ configs.routes.productDetail }>
                                     <img
                                         src="https://i.pinimg.com/564x/70/77/a8/7077a83e48a1ccf51c730ccd0964ec68.jpg"
                                         className="img-fluid product-image"
@@ -113,7 +139,7 @@ function ProductPage() {
                                 <div className="product-info d-flex">
                                     <div>
                                         <h5 className="product-title mb-0">
-                                            <NavLink to="/product-detail" className="product-title-link">
+                                            <NavLink to={ configs.routes.productDetail } className="product-title-link">
                                                 Juice Drinks
                                             </NavLink>
                                         </h5>
@@ -138,7 +164,7 @@ function ProductPage() {
 
                         <div className="col-lg-4 col-12 mb-3">
                             <div className="product-thumb">
-                                <NavLink to="/product-detail">
+                                <NavLink to={ configs.routes.productDetail }>
                                     <img
                                         src="https://i.pinimg.com/564x/52/d0/22/52d022282cdf17a5ef4ae4559204eaaa.jpg"
                                         className="img-fluid product-image"
@@ -157,7 +183,7 @@ function ProductPage() {
                                 <div className="product-info d-flex">
                                     <div>
                                         <h5 className="product-title mb-0">
-                                            <NavLink to="/product-detail" className="product-title-link">
+                                            <NavLink to={ configs.routes.productDetail } className="product-title-link">
                                                 Package
                                             </NavLink>
                                         </h5>
@@ -172,7 +198,7 @@ function ProductPage() {
 
                         <div className="col-lg-4 col-12 mb-3">
                             <div className="product-thumb">
-                                <NavLink to="/product-detail">
+                                <NavLink to={ configs.routes.productDetail }>
                                     <img
                                         src="https://i.pinimg.com/564x/62/18/d5/6218d527b75512625cc6f77de13a38d8.jpg"
                                         className="img-fluid product-image"
@@ -189,7 +215,7 @@ function ProductPage() {
                                 <div className="product-info d-flex">
                                     <div>
                                         <h5 className="product-title mb-0">
-                                            <NavLink to="/product-detail" className="product-title-link">
+                                            <NavLink to={ configs.routes.productDetail } className="product-title-link">
                                                 Bottle
                                             </NavLink>
                                         </h5>
@@ -204,7 +230,7 @@ function ProductPage() {
 
                         <div className="col-lg-4 col-12 mb-3">
                             <div className="product-thumb">
-                                <NavLink to="/product-detail">
+                                <NavLink to={ configs.routes.productDetail }>
                                     <img
                                         src="https://i.pinimg.com/564x/47/ca/69/47ca69d328cb0338f4d1280e6e949bdc.jpg"
                                         className="img-fluid product-image"
@@ -221,7 +247,7 @@ function ProductPage() {
                                 <div className="product-info d-flex">
                                     <div>
                                         <h5 className="product-title mb-0">
-                                            <NavLink to="/product-detail" className="product-title-link">
+                                            <NavLink to={ configs.routes.productDetail } className="product-title-link">
                                                 Medicine
                                             </NavLink>
                                         </h5>

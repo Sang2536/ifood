@@ -1,6 +1,7 @@
 import { NavLink } from 'react-router-dom';
 
 import '../scss/layouts/product.scss';
+import configs from '../configs';
 import { CarouselComponent, HomeAboutComponent, HomeProductComponent } from '../PageComponents';
 import { ArrowRightIcon } from '../icons';
 
@@ -33,7 +34,7 @@ function HomePage() {
                                     by Tooplate.
                                 </p>
 
-                                <NavLink to="/product" className="custom-link">
+                                <NavLink to={ configs.routes.product } className="custom-link">
                                     Explore Products
                                     <i className="bi-arrow-right ms-2">
                                         <ArrowRightIcon />

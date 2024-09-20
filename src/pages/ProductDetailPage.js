@@ -1,6 +1,7 @@
 import { NavLink } from 'react-router-dom';
 
 import '../scss/layouts/product.scss';
+import configs from '../configs';
 import { CartModalComponent } from '../PageComponents';
 import { HeartFilledIcon } from '../icons';
 
@@ -81,7 +82,7 @@ function ProductDetailPage() {
                                         Details
                                     </NavLink>
 
-                                    <NavLink to="#" className="product-additional-link">
+                                    <NavLink to={ configs.routes.payment } className="product-additional-link">
                                         Delivery and Payment
                                     </NavLink>
                                 </p>
@@ -100,7 +101,7 @@ function ProductDetailPage() {
 
                         <div className="col-lg-4 col-12 mb-3">
                             <div className="product-thumb">
-                                <NavLink to="/product-detail">
+                                <NavLink to={ configs.routes.productDetail }>
                                     <img src="https://i.pinimg.com/564x/fd/73/fd/fd73fd73e03875ee55d15588c4deee74.jpg" className="img-fluid product-image" alt="" />
                                 </NavLink>
 
@@ -115,7 +116,7 @@ function ProductDetailPage() {
                                 <div className="product-info d-flex">
                                     <div>
                                         <h5 className="product-title mb-0">
-                                            <NavLink to="/product-detail" className="product-title-link">Tree pot</NavLink>
+                                            <NavLink to={ configs.routes.productDetail } className="product-title-link">Tree pot</NavLink>
                                         </h5>
 
                                         <p className="product-p">Original package design from house</p>
@@ -128,7 +129,7 @@ function ProductDetailPage() {
 
                         <div className="col-lg-4 col-12 mb-3">
                             <div className="product-thumb">
-                                <NavLink to="/product-detail">
+                                <NavLink to={ configs.routes.productDetail }>
                                     <img src="https://i.pinimg.com/564x/80/99/4f/80994f4d0f232f319ba15f5e5a1a907c.jpg" className="img-fluid product-image" alt="" />
                                 </NavLink>
 
@@ -143,7 +144,7 @@ function ProductDetailPage() {
                                 <div className="product-info d-flex">
                                     <div>
                                         <h5 className="product-title mb-0">
-                                            <NavLink to="/product-detail" className="product-title-link">Fashion set</NavLink>
+                                            <NavLink to={ configs.routes.productDetail } className="product-title-link">Fashion set</NavLink>
                                         </h5>
 
                                         <p className="product-p">Costume package</p>
@@ -156,7 +157,7 @@ function ProductDetailPage() {
 
                         <div className="col-lg-4 col-12">
                             <div className="product-thumb">
-                                <NavLink to="/product-detail">
+                                <NavLink to={ configs.routes.productDetail }>
                                     <img src="https://i.pinimg.com/564x/46/15/51/4615516d8b34ce2621b44447cd767a72.jpg" className="img-fluid product-image" alt="" />
                                 </NavLink>
 
@@ -169,7 +170,7 @@ function ProductDetailPage() {
                                 <div className="product-info d-flex">
                                     <div>
                                         <h5 className="product-title mb-0">
-                                            <NavLink to="/product-detail" className="product-title-link">Juice Drinks</NavLink>
+                                            <NavLink to={ configs.routes.productDetail } className="product-title-link">Juice Drinks</NavLink>
                                         </h5>
 
                                         <p className="product-p">Nature made another world</p>

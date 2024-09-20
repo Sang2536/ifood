@@ -1,6 +1,7 @@
 import { NavLink } from 'react-router-dom';
 
 import '../scss/custom-btn.scss';
+import configs from '../configs';
 import { BrandFacebookIcon, BrandInstagramIcon, BrandTelegramIcon, BrandTiktokIcon, BrandWhatsappIcon, BrandYoutubeIcon } from '../icons';
 
 function ContactPage() {
