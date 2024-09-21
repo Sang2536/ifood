@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 import '../../scss/components/pages/carousel.scss';
 import '../../scss/components/tags/custom-btn.scss';
 import configs from '../../configs';
-import { Image } from '../../SingleComponents';
+import { Image } from '../tags';
 
 function CarouselComponent() {
     return (

@@ -2,7 +2,7 @@ import { NavLink } from 'react-router-dom';
 
 import '../../scss/pages/product.scss';
 import configs from '../../configs';
-import { Image } from '../../SingleComponents';
+import { Image } from '../tags';
 import { HeartFilledIcon } from '../../icons';
 
 function HomeProductComponent() {

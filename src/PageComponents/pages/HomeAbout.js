@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 import '../../scss/pages/about.scss';
 import '../../scss/section.scss';
 import configs from '../../configs';
-import { Image } from '../../SingleComponents';
+import { Image } from '../tags';
 import { ArrowRightIcon } from '../../icons';
 
 function HomeAboutComponent() {

@@ -1,4 +1,4 @@
-import { Image } from '../../SingleComponents';
+import { Image } from '../tags';
 
 function CardComponent() {
     return (
