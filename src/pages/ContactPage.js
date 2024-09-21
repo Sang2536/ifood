@@ -1,7 +1,7 @@
 import { NavLink } from 'react-router-dom';
 
 import '../scss/pages/contact.scss';
-import '../scss/custom-btn.scss';
+import '../scss/components/tags/custom-btn.scss';
 import configs from '../configs';
 import {
     BrandFacebookIcon,

@@ -1,5 +1,5 @@
-import '../scss/custom-img.scss';
-import '../scss/testimonial.scss';
+import '../scss/components/tags/custom-img.scss';
+import '../scss/components/pages/testimonial.scss';
 
 function StoryPage() { 
     return (

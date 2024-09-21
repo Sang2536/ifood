@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 
-import '../scss/div-separator.scss';
+import '../scss/components/tags/div-separator.scss';
 import configs from '../configs';
 import { BrandFacebookFilledIcon, BrandGoogleFilledIcon } from "../icons";
 

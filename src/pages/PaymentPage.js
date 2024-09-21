@@ -29,7 +29,7 @@ function PaymentPage() {
                                         <p className="product-p">Original package design from house</p>
                                     </div>
                                     <h5 className="product-price text-muted ms-auto">$25</h5>
-                                    <h5 className="product-price text-muted ms-auto">x3</h5>{' '}
+                                    <h5 className="product-price text-muted ms-auto">x3</h5>
                                 </div>
                             </div>
                         </div>

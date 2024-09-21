@@ -84,7 +84,7 @@ function FaqPage() {
                                             <p className="large-paragraph">
                                                 <NavLink to="https://www.tooplate.com/free-templates" target="_blank">
                                                     Tooplate
-                                                </NavLink>{' '}
+                                                </NavLink>
                                                 is a great website to download free HTML website templates for your
                                                 business or personal use. Tooplate website has been online for almost 8
                                                 years now. Thank you for visiting our website.

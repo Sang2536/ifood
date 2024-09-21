@@ -1,6 +1,6 @@
 import { NavLink } from 'react-router-dom';
 
-import '../scss/PageComponents/footer.scss';
+import '../scss/components/pages/footer.scss';
 import configs from '../configs';
 import {
     BrandFacebookIcon,
@@ -30,7 +30,7 @@ function FooterComponent() {
                         </p>
                         <br />
                         <p className="copyright-text">
-                            Designed by{' '}
+                            Designed by
                             <NavLink to={configs.routes.home} className="" target="_blank">
                                 iFood
                             </NavLink>
@@ -41,28 +41,43 @@ function FooterComponent() {
                         <h5 className="text-white mb-3">Sitemap</h5>
                         <ul className="footer-menu d-flex flex-wrap">
                             <li className="footer-menu-item">
-                                <NavLink to={ configs.routes.story } className="footer-menu-link">
+                                <NavLink to={configs.routes.signIn} className="footer-menu-link">
+                                    Sign In
+                                </NavLink>
+                            </li>
+                            <li className="footer-menu-item">
+                                <NavLink to={configs.routes.signUp} className="footer-menu-link">
+                                    Sign Up
+                                </NavLink>
+                            </li>
+                            <li className="footer-menu-item">
+                                <NavLink to={configs.routes.home} className="footer-menu-link">
+                                    Home
+                                </NavLink>
+                            </li>
+                            <li className="footer-menu-item">
+                                <NavLink to={configs.routes.story} className="footer-menu-link">
                                     Story
                                 </NavLink>
                             </li>
                             <li className="footer-menu-item">
-                                <NavLink to={ configs.routes.product } className="footer-menu-link">
+                                <NavLink to={configs.routes.product} className="footer-menu-link">
                                     Product
+                                </NavLink>
+                            </li>
+                            <li className="footer-menu-item">
+                                <NavLink to={configs.routes.faq} className="footer-menu-link">
+                                    FAQs
+                                </NavLink>
+                            </li>
+                            <li className="footer-menu-item">
+                                <NavLink to={configs.routes.contact} className="footer-menu-link">
+                                    Contact
                                 </NavLink>
                             </li>
                             <li className="footer-menu-item">
                                 <NavLink to="/privacy-policy" className="footer-menu-link">
                                     Privacy policy
-                                </NavLink>
-                            </li>
-                            <li className="footer-menu-item">
-                                <NavLink to={ configs.routes.faq } className="footer-menu-link">
-                                    FAQs
-                                </NavLink>
-                            </li>
-                            <li className="footer-menu-item">
-                                <NavLink to={ configs.routes.contact } className="footer-menu-link">
-                                    Contact
                                 </NavLink>
                             </li>
                         </ul>

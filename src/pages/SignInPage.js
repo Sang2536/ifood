@@ -1,6 +1,6 @@
 import { NavLink } from 'react-router-dom';
 
-import '../scss/PageComponents/side-header.scss';
+import '../scss/components/pages/side-header.scss';
 import configs from '../configs';
 
 function SignInPage() {
@@ -45,7 +45,8 @@ function SignInPage() {
                                         </button>
 
                                         <p className="text-center">
-                                            Don’t have an account? <NavLink to={ configs.routes.signUp }>Create New</NavLink>
+                                            Don’t have an account?{' '}
+                                            <NavLink to={configs.routes.signUp}>Create New</NavLink>
                                         </p>
                                     </form>
                                 </div>

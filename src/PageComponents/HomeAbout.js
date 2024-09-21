@@ -96,8 +96,8 @@ function HomeAboutComponent() {
                                                 </h4>
 
                                                 <p>
-                                                    Little Fashion templates comes with{' '}
-                                                    <NavLink to={configs.routes.signIn}>sign in</NavLink> /{' '}
+                                                    Little Fashion templates comes with
+                                                    <NavLink to={configs.routes.signIn}>sign in</NavLink>
                                                     <NavLink to={configs.routes.signUp}>sign up</NavLink> pages, product
                                                     listing / product detail, about, FAQs, and contact page.
                                                 </p>
