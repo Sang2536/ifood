@@ -1,9 +1,9 @@
 import { NavLink } from 'react-router-dom';
 
-import '../scss/pages/product.scss';
-import configs from '../configs';
-import { Image } from '../SingleComponents';
-import { HeartFilledIcon } from '../icons';
+import '../../scss/pages/product.scss';
+import configs from '../../configs';
+import { Image } from '../../SingleComponents';
+import { HeartFilledIcon } from '../../icons';
 
 function HomeProductComponent() {
     return (

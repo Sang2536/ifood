@@ -1,8 +1,8 @@
-import { NavLink } from "react-router-dom";
+import { NavLink } from 'react-router-dom';
 
 import '../scss/components/tags/div-separator.scss';
 import configs from '../configs';
-import { BrandFacebookFilledIcon, BrandGoogleFilledIcon } from "../icons";
+import { BrandFacebookFilledIcon, BrandGoogleFilledIcon } from '../icons';
 
 function SignUpPage() {
     return (
@@ -80,7 +80,8 @@ function SignUpPage() {
                                         </button>
 
                                         <p className="text-center">
-                                            Already have an account? Please <NavLink to={ configs.routes.signIn }>Sign In</NavLink>
+                                            Already have an account? Please{' '}
+                                            <NavLink to={configs.routes.signIn}>Sign In</NavLink>
                                         </p>
                                     </form>
                                 </div>

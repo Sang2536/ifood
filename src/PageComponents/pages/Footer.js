@@ -1,7 +1,7 @@
 import { NavLink } from 'react-router-dom';
 
-import '../scss/components/pages/footer.scss';
-import configs from '../configs';
+import '../../scss/components/pages/footer.scss';
+import configs from '../../configs';
 import {
     BrandFacebookIcon,
     BrandGmailIcon,
@@ -12,7 +12,7 @@ import {
     BrandTwitterIcon,
     BrandYoutubeIcon,
     BrandWhatsappIcon,
-} from '../icons';
+} from '../../icons';
 
 function FooterComponent() {
     return (

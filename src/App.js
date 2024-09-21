@@ -4,7 +4,7 @@ import { publicRoutes } from './routes';
 
 import './scss/app.scss';
 import './scss/responsive-style.scss';
-import { NavigationHeaderComponent, FooterComponent } from './PageComponents';
+import { NavigationHeaderComponent, FooterComponent } from './PageComponents/pages';
 
 function App() {
     return (
@@ -35,9 +35,9 @@ function App() {
                             );
                         } else {
                             return (
-                                <Route 
-                                    key={index} 
-                                    path={route.path} 
+                                <Route
+                                    key={index}
+                                    path={route.path}
                                     element={
                                         <Fragment>
                                             <main>
@@ -49,8 +49,7 @@ function App() {
                                             <FooterComponent />
                                         </Fragment>
                                     }
-                                >
-                                </Route>
+                                ></Route>
                             );
                         }
                     })}

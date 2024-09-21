@@ -1,5 +1,5 @@
-import { Image } from '../SingleComponents';
-import { AwardFilledIcon, ActivityIcon } from '../icons';
+import { Image } from '../../SingleComponents';
+import { AwardFilledIcon, ActivityIcon } from '../../icons';
 
 function ContentComponent() {
     return (

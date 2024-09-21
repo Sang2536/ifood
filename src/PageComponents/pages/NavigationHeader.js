@@ -1,8 +1,8 @@
 import { NavLink } from 'react-router-dom';
 
-import '../scss/components/pages/navigation-header.scss';
-import configs from '../configs';
-import { UserIcon, ShoppingBagIcon } from '../icons';
+import '../../scss/components/pages/navigation-header.scss';
+import configs from '../../configs';
+import { UserIcon, ShoppingBagIcon } from '../../icons';
 
 function NavigationHeaderComponent() {
     return (
