@@ -3,7 +3,7 @@ const routes = {
     error: '/error',
     faq: '/faq',
     home: '/',
-    payment: '/@:uid/@:transaction/payment',
+    payment: '/@:uid/payment',
     productDetail: '/product-detail',
     product: '/product',
     profile: '/@:uid/profile',
