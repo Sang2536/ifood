@@ -1,6 +1,6 @@
 import { NavLink } from 'react-router-dom';
 
-import '../scss/layouts/about.scss';
+import '../scss/pages/about.scss';
 import '../scss/section.scss';
 import configs from '../configs';
 import { Image } from '../SingleComponents';
@@ -97,9 +97,9 @@ function HomeAboutComponent() {
 
                                                 <p>
                                                     Little Fashion templates comes with{' '}
-                                                    <NavLink to={ configs.routes.signIn }>sign in</NavLink> /{' '}
-                                                    <NavLink to={ configs.routes.signUp }>sign up</NavLink> pages, product listing / product
-                                                    detail, about, FAQs, and contact page.
+                                                    <NavLink to={configs.routes.signIn}>sign in</NavLink> /{' '}
+                                                    <NavLink to={configs.routes.signUp}>sign up</NavLink> pages, product
+                                                    listing / product detail, about, FAQs, and contact page.
                                                 </p>
 
                                                 <p>
@@ -108,7 +108,7 @@ function HomeAboutComponent() {
                                                 </p>
 
                                                 <div className="mt-2 mt-lg-auto">
-                                                    <NavLink to={ configs.routes.story } className="custom-link mb-2">
+                                                    <NavLink to={configs.routes.story} className="custom-link mb-2">
                                                         Learn more about us
                                                         <i className="bi-arrow-right ms-2">
                                                             <ArrowRightIcon />
@@ -151,7 +151,7 @@ function HomeAboutComponent() {
                                                 <p>Custom work is branding, web design, UI/UX design</p>
 
                                                 <div className="mt-2 mt-lg-auto">
-                                                    <NavLink to={ configs.routes.contact } className="custom-link mb-2">
+                                                    <NavLink to={configs.routes.contact} className="custom-link mb-2">
                                                         Work with us
                                                         <i className="bi-arrow-right ms-2">
                                                             <ArrowRightIcon />
@@ -232,7 +232,7 @@ function HomeAboutComponent() {
                                                 </div>
 
                                                 <div className="mt-2 mt-lg-auto">
-                                                    <NavLink to={ configs.routes.product } className="custom-link mb-2">
+                                                    <NavLink to={configs.routes.product} className="custom-link mb-2">
                                                         Explore products
                                                         <i className="bi-arrow-right ms-2">
                                                             <ArrowRightIcon />

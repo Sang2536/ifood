@@ -21,6 +21,18 @@ function ShoppingCartPage() {
 
             <section className="section-padding pb-0">
                 <div className="container">
+                    <div className="row align-items-center text-center">
+                        <div className="offset-lg-9 col-lg-3 col-12">
+                            <NavLink to={configs.routes.transaction} className="btn custom-btn form-control mt-4 mb-3">
+                                ALL TRANSACTIONS
+                            </NavLink>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section className="section-padding pb-0">
+                <div className="container">
                     <div className="row">
                         <div className="col-12">
                             <table className="table table-hover">

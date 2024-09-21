@@ -31,11 +31,17 @@ const publicRoutes = [
     { path: configs.routes.signIn, component: SignInPage },
     { path: configs.routes.signUp, component: SignUpPage, noLayout: true },
     { path: configs.routes.story, component: StoryPage },
+
+    { path: configs.routes.profile, component: ProfilePage },
+    { path: configs.routes.shoppingCart, component: ShoppingCartPage },
+    { path: configs.routes.payment, component: PaymentPage, noLayout: true },
+    { path: configs.routes.setting, component: SettingPage },
+    { path: configs.routes.transaction, component: TransactionPage },
 ];
 
 //  private routes
 const privateRoutes = [
-    { path: configs.routes.profile, component: ProfilePage, noLayout: true },
+    { path: configs.routes.profile, component: ProfilePage },
     { path: configs.routes.shoppingCart, component: ShoppingCartPage },
     { path: configs.routes.payment, component: PaymentPage, noLayout: true },
     { path: configs.routes.setting, component: SettingPage },

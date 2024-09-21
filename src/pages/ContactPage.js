@@ -1,8 +1,16 @@
 import { NavLink } from 'react-router-dom';
 
+import '../scss/pages/contact.scss';
 import '../scss/custom-btn.scss';
 import configs from '../configs';
-import { BrandFacebookIcon, BrandInstagramIcon, BrandTelegramIcon, BrandTiktokIcon, BrandWhatsappIcon, BrandYoutubeIcon } from '../icons';
+import {
+    BrandFacebookIcon,
+    BrandInstagramIcon,
+    BrandTelegramIcon,
+    BrandTiktokIcon,
+    BrandWhatsappIcon,
+    BrandYoutubeIcon,
+} from '../icons';
 
 function ContactPage() {
     return (
@@ -26,57 +34,57 @@ function ContactPage() {
                 />
             </header>
 
-            <section class="contact section-padding">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-6 col-12">
-                            <h2 class="mb-4">
+            <section className="contact section-padding">
+                <div className="container">
+                    <div className="row">
+                        <div className="col-lg-6 col-12">
+                            <h2 className="mb-4">
                                 Let's <span>begin</span>
                             </h2>
 
-                            <form class="contact-form me-lg-5 pe-lg-3" role="form">
-                                <div class="form-floating">
+                            <form className="contact-form me-lg-5 pe-lg-3" role="form">
+                                <div className="form-floating">
                                     <input
                                         type="text"
                                         name="name"
                                         id="name"
-                                        class="form-control"
+                                        className="form-control"
                                         placeholder="Full name"
                                         required
                                     />
                                     <label for="name">Full name</label>
                                 </div>
 
-                                <div class="form-floating my-4">
+                                <div className="form-floating my-4">
                                     <input
                                         type="email"
                                         name="email"
                                         id="email"
                                         pattern="[^ @]*@[^ @]*"
-                                        class="form-control"
+                                        className="form-control"
                                         placeholder="Email address"
                                         required
                                     />
                                     <label for="email">Email address</label>
                                 </div>
 
-                                <div class="form-floating my-4">
+                                <div className="form-floating my-4">
                                     <input
                                         type="subject"
                                         name="subject"
                                         id="subject"
-                                        class="form-control"
+                                        className="form-control"
                                         placeholder="Subject"
                                         required
                                     />
                                     <label for="subject">Subject</label>
                                 </div>
 
-                                <div class="form-floating mb-4">
+                                <div className="form-floating mb-4">
                                     <textarea
                                         id="message"
                                         name="message"
-                                        class="form-control"
+                                        className="form-control"
                                         placeholder="Leave a comment here"
                                         required
                                         style={{ height: '160px' }}
@@ -84,75 +92,78 @@ function ContactPage() {
                                     <label for="message">Tell us about the project</label>
                                 </div>
 
-                                <div class="col-lg-5 col-6">
-                                    <button type="submit" class="form-control">
+                                <div className="col-lg-5 col-6">
+                                    <button type="submit" className="form-control">
                                         Send
                                     </button>
                                 </div>
                             </form>
                         </div>
 
-                        <div class="col-lg-6 col-12 mt-5 ms-auto">
-                            <div class="row">
-                                <div class="col-6 border-end contact-info">
-                                    <h6 class="mb-3">New Business</h6>
+                        <div className="col-lg-6 col-12 mt-5 ms-auto">
+                            <div className="row">
+                                <div className="col-6 border-end contact-info">
+                                    <h6 className="mb-3">New Business</h6>
 
-                                    <NavLink to="mailto:hello@company.com" class="custom-link">
+                                    <NavLink to="mailto:hello@company.com" className="custom-link">
                                         hello@company.com
-                                        <i class="bi-arrow-right ms-2"></i>
+                                        <i className="bi-arrow-right ms-2"></i>
                                     </NavLink>
                                 </div>
 
-                                <div class="col-6 contact-info">
-                                    <h6 class="mb-3">Main Studio</h6>
+                                <div className="col-6 contact-info">
+                                    <h6 className="mb-3">Main Studio</h6>
 
-                                    <NavLink to="mailto:studio@company.com" class="custom-link">
+                                    <NavLink to="mailto:studio@company.com" className="custom-link">
                                         studio@company.com
-                                        <i class="bi-arrow-right ms-2"></i>
+                                        <i className="bi-arrow-right ms-2"></i>
                                     </NavLink>
                                 </div>
 
-                                <div class="col-6 border-top border-end contact-info">
-                                    <h6 class="mb-3">Our Office</h6>
+                                <div className="col-6 border-top border-end contact-info">
+                                    <h6 className="mb-3">Our Office</h6>
 
-                                    <p class="text-muted">Akershusstranda 20, 0150 Oslo, Norway</p>
+                                    <p className="text-muted">Akershusstranda 20, 0150 Oslo, Norway</p>
                                 </div>
 
-                                <div class="col-6 border-top contact-info">
-                                    <h6 class="mb-3">Our Socials</h6>
+                                <div className="col-6 border-top contact-info">
+                                    <h6 className="mb-3">Our Socials</h6>
 
-                                    <ul class="social-icon">
+                                    <ul className="social-icon">
                                         <li>
-                                            <NavLink to="/link-facebook" class="social-icon-link bi-facebook">
+                                            <NavLink to="/link-facebook" className="me-3 social-icon-link bi-facebook">
                                                 <BrandFacebookIcon />
                                             </NavLink>
                                         </li>
                                         <li>
-                                            <NavLink to="/link-message" class="social-icon-link bi-messenger">
+                                            <NavLink to="/link-telegram" className="me-3 social-icon-link bi-telegram">
                                                 <BrandTelegramIcon />
                                             </NavLink>
                                         </li>
 
                                         <li>
-                                            <NavLink to="/link-youtube" class="social-icon-link bi-youtube">
+                                            <NavLink to="/link-youtube" className="me-3 social-icon-link bi-youtube">
                                                 <BrandYoutubeIcon />
                                             </NavLink>
                                         </li>
 
                                         <li>
-                                            <NavLink to="/link-instagram" class="social-icon-link bi-instagram">
+                                            <NavLink
+                                                to="/link-instagram"
+                                                className="me-3 social-icon-link bi-instagram"
+                                            >
                                                 <BrandInstagramIcon />
                                             </NavLink>
                                         </li>
 
                                         <li>
-                                            <NavLink to="/link-whatsapp" class="social-icon-link bi-whatsapp">
+                                            <NavLink to="/link-whatsapp" className="me-3 social-icon-link bi-whatsapp">
                                                 <BrandWhatsappIcon />
                                             </NavLink>
                                         </li>
 
                                         <li>
-                                            <NavLink to="/link-tiktok" class="social-icon-link bi-tiktok">
+                                            <NavLink to="/link-tiktok" className="me-3 social-icon-link bi-tiktok">
                                                 <BrandTiktokIcon />
                                             </NavLink>
                                         </li>

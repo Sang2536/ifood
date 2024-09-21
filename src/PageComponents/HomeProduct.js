@@ -1,6 +1,6 @@
 import { NavLink } from 'react-router-dom';
 
-import '../scss/layouts/product.scss';
+import '../scss/pages/product.scss';
 import configs from '../configs';
 import { Image } from '../SingleComponents';
 import { HeartFilledIcon } from '../icons';
@@ -17,7 +17,7 @@ function HomeProductComponent() {
 
                         <div className="col-lg-4 col-12 mb-3">
                             <div className="product-thumb">
-                                <NavLink to={ configs.routes.productDetail }>
+                                <NavLink to={configs.routes.productDetail}>
                                     <img
                                         src="https://i.pinimg.com/564x/56/f9/62/56f962d9e08a521d551be872159651ed.jpg"
                                         className="img-fluid product-image"
@@ -36,7 +36,7 @@ function HomeProductComponent() {
                                 <div className="product-info d-flex">
                                     <div>
                                         <h5 className="product-title mb-0">
-                                            <NavLink to={ configs.routes.productDetail } className="product-title-link">
+                                            <NavLink to={configs.routes.productDetail} className="product-title-link">
                                                 Tree pot
                                             </NavLink>
                                         </h5>
@@ -51,7 +51,7 @@ function HomeProductComponent() {
 
                         <div className="col-lg-4 col-12 mb-3">
                             <div className="product-thumb">
-                                <NavLink to={ configs.routes.productDetail }>
+                                <NavLink to={configs.routes.productDetail}>
                                     <img
                                         src="https://i.pinimg.com/564x/3c/75/d9/3c75d96bd31b762788cab9ede0dbe245.jpg"
                                         className="img-fluid product-image"
@@ -70,7 +70,7 @@ function HomeProductComponent() {
                                 <div className="product-info d-flex">
                                     <div>
                                         <h5 className="product-title mb-0">
-                                            <NavLink to={ configs.routes.productDetail } className="product-title-link">
+                                            <NavLink to={configs.routes.productDetail} className="product-title-link">
                                                 Fashion Set
                                             </NavLink>
                                         </h5>
@@ -85,7 +85,7 @@ function HomeProductComponent() {
 
                         <div className="col-lg-4 col-12">
                             <div className="product-thumb">
-                                <NavLink to={ configs.routes.productDetail }>
+                                <NavLink to={configs.routes.productDetail}>
                                     <img
                                         src="https://i.pinimg.com/564x/34/9c/97/349c9742c4eb84193293e0308613f84c.jpg"
                                         className="img-fluid product-image"
@@ -102,7 +102,7 @@ function HomeProductComponent() {
                                 <div className="product-info d-flex">
                                     <div>
                                         <h5 className="product-title mb-0">
-                                            <NavLink to={ configs.routes.productDetail } className="product-title-link">
+                                            <NavLink to={configs.routes.productDetail} className="product-title-link">
                                                 Juice Drinks
                                             </NavLink>
                                         </h5>
@@ -116,7 +116,7 @@ function HomeProductComponent() {
                         </div>
 
                         <div className="col-12 text-center">
-                            <NavLink to={ configs.routes.product } className="view-all">
+                            <NavLink to={configs.routes.product} className="view-all">
                                 View All Products
                             </NavLink>
                         </div>

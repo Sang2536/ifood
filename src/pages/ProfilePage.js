@@ -1,6 +1,6 @@
 import { NavLink } from 'react-router-dom';
 
-import '../scss/layouts/profile.scss';
+import '../scss/pages/profile.scss';
 import configs from '../configs';
 import { BrandFacebookIcon, BrandGmailIcon, BrandInstagramIcon, BrandTelegramIcon, BrandTwitterIcon } from '../icons';
 

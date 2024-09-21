@@ -1,6 +1,6 @@
 import { NavLink } from 'react-router-dom';
 
-import '../scss/layouts/faq-accordion.scss';
+import '../scss/pages/faq-accordion.scss';
 
 function FaqPage() {
     return (
