@@ -75,7 +75,7 @@ function NavigationHeaderComponent() {
                                 <UserIcon />
                             </NavLink>
 
-                            <NavLink to={configs.routes.shoppingCart} className="bi-bag custom-icon">
+                            <NavLink to={configs.routes.shoppingCart} className="bi-bag custom-icon me-3">
                                 <ShoppingBagIcon />
                             </NavLink>
                         </div>
