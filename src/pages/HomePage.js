@@ -2,7 +2,7 @@ import { NavLink } from 'react-router-dom';
 
 import '../scss/pages/product.scss';
 import configs from '../configs';
-import { CarouselComponent, HomeAboutComponent, HomeProductComponent } from '../PageComponents/pages';
+import { CarouselComponent, HomeAboutComponent, HomeProductComponent } from '../components/pages';
 import { ArrowRightIcon } from '../icons';
 
 function HomePage() {

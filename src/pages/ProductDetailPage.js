@@ -2,7 +2,7 @@ import { NavLink } from 'react-router-dom';
 
 import '../scss/pages/product.scss';
 import configs from '../configs';
-import { CartModalComponent } from '../PageComponents/pages';
+import { CartModalComponent } from '../components/pages';
 import { HeartFilledIcon } from '../icons';
 
 function ProductDetailPage() {

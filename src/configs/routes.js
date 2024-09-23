@@ -4,7 +4,7 @@ const routes = {
     faq: '/faq',
     home: '/',
     payment: '/@:uid/payment',
-    productDetail: '/product-detail',
+    productDetail: '/@:pid/product-detail',
     product: '/product',
     profile: '/@:uid/profile',
     search: '/search',

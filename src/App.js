@@ -4,7 +4,7 @@ import { publicRoutes } from './routes';
 
 import './scss/app.scss';
 import './scss/responsive-style.scss';
-import { NavigationHeaderComponent, FooterComponent } from './PageComponents/pages';
+import { NavigationHeaderComponent, FooterComponent } from './components/pages';
 
 function App() {
     return (
@@ -54,6 +54,12 @@ function App() {
                         }
                     })}
                 </Routes>
+
+                <div class="gototop js-top">
+                    <a href="#" class="js-gotop">
+                        <i class="icon-arrow-up22"></i>
+                    </a>
+                </div>
             </div>
         </BrowserRouter>
     );

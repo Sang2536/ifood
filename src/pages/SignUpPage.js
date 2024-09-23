@@ -31,7 +31,7 @@ function SignUpPage() {
 
                             <div className="row">
                                 <div className="col-lg-8 col-11 mx-auto">
-                                    <form role="form" method="post">
+                                    <form action="/sign-up" role="form" method="post">
                                         <div className="form-floating">
                                             <input
                                                 type="email"

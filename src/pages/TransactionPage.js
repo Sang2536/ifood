@@ -1,7 +1,6 @@
 import { NavLink } from 'react-router-dom';
 
 import configs from '../configs';
-import { TrashIcon } from '../icons';
 
 function TransactionPage() {
     return (

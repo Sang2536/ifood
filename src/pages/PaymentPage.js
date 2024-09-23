@@ -11,11 +11,13 @@ function PaymentPage() {
                     <div className="col-12 d-flex my-3">
                         <div className="w-100 d-flex">
                             <div className="w-25">
-                                <img
-                                    src="https://i.pinimg.com/564x/5d/4d/40/5d4d400928622b5c7415201f3820ac56.jpg"
-                                    className="img-fluid product-image"
-                                    alt=""
-                                />
+                                <NavLink to={configs.routes.productDetail} className="product-title-link">
+                                    <img
+                                        src="https://i.pinimg.com/564x/5d/4d/40/5d4d400928622b5c7415201f3820ac56.jpg"
+                                        className="img-fluid product-image"
+                                        alt=""
+                                    />
+                                </NavLink>
                             </div>
                             <div className="w-75">
                                 <div className="product-info d-flex">
@@ -37,11 +39,13 @@ function PaymentPage() {
                     <div className="col-12 d-flex my-3">
                         <div className="w-100 d-flex">
                             <div className="w-25">
-                                <img
-                                    src="https://i.pinimg.com/564x/62/18/d5/6218d527b75512625cc6f77de13a38d8.jpg"
-                                    className="img-fluid product-image"
-                                    alt=""
-                                />
+                                <NavLink to={configs.routes.productDetail} className="product-title-link">
+                                    <img
+                                        src="https://i.pinimg.com/564x/62/18/d5/6218d527b75512625cc6f77de13a38d8.jpg"
+                                        className="img-fluid product-image"
+                                        alt=""
+                                    />
+                                </NavLink>
                             </div>
                             <div className="w-75">
                                 <div className="product-info d-flex">

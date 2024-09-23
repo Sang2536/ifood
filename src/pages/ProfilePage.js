@@ -33,6 +33,7 @@ function ProfilePage() {
                             <h2>About @username</h2>
                         </div>
                     </div>
+
                     <div className="row">
                         <div className="col-lg-5 col-12">
                             <h5>Contact</h5>
@@ -61,6 +62,7 @@ function ProfilePage() {
                                 </li>
                             </ul>
                         </div>
+
                         <div className="col-lg-7 col-12">
                             <h5>Hello There!</h5>
                             <p>
@@ -105,6 +107,16 @@ function ProfilePage() {
                                     </NavLink>
                                 </li>
                             </ul>
+                        </div>
+                    </div>
+
+                    <div className="row">
+                        <div className="col-lg-5 col-12">
+                            <h5>Setting</h5>
+                        </div>
+
+                        <div className="col-lg-7 col-12">
+                            <h5>Content Setting</h5>
                         </div>
                     </div>
                 </div>
