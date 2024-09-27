@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 
-function Textarea({
+function FormTextarea({
     className = {
         div: 'form-floating mb-4',
         input: 'form-control',
@@ -9,6 +9,7 @@ function Textarea({
     nameInput,
     idInput = '',
     valueInput,
+    styleInput,
     placeholderInput,
     requiredInput = false,
     readOnlyInput = false,
@@ -21,6 +22,7 @@ function Textarea({
                 id={idInput}
                 name={nameInput}
                 className={className.input}
+                style={styleInput}
                 placeholder={placeholderInput ? placeholderInput : textLabel}
                 required={requiredInput}
                 readOnly={readOnlyInput}
@@ -35,14 +37,15 @@ function Textarea({
     );
 }
 
-Textarea.propTypes = {
+FormTextarea.propTypes = {
     className: PropTypes.shape({
         div: PropTypes.string,
         input: PropTypes.string,
         label: PropTypes.string,
     }),
-    nameInput: PropTypes.string,
+    nameInput: PropTypes.string.isRequired,
     idInput: PropTypes.string.isRequired,
+    styleInput: PropTypes.string,
     valueInput: PropTypes.string,
     placeholderInput: PropTypes.string,
     requiredInput: PropTypes.bool,
@@ -50,4 +53,4 @@ Textarea.propTypes = {
     textLabel: PropTypes.string.isRequired,
 };
 
-export default Textarea;
+export default FormTextarea;

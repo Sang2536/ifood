@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 
-function CheckItem({
+function FormCheck({
     className = {
         div: 'form-floating mb-4',
         input: 'form-control',
@@ -39,7 +39,7 @@ function CheckItem({
     );
 }
 
-CheckItem.propTypes = {
+FormCheck.propTypes = {
     className: PropTypes.shape({
         div: PropTypes.string,
         input: PropTypes.string,
@@ -55,4 +55,4 @@ CheckItem.propTypes = {
     textLabel: PropTypes.string.isRequired,
 };
 
-export default CheckItem;
+export default FormCheck;

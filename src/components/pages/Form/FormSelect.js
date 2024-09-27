@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 
-function Select({
+function FormSelect({
     className = {
         div: 'form-floating mb-4',
         input: 'form-control',
@@ -39,7 +39,7 @@ function Select({
     );
 }
 
-Select.propTypes = {
+FormSelect.propTypes = {
     className: PropTypes.shape({
         div: PropTypes.string,
         input: PropTypes.string,
@@ -60,4 +60,4 @@ Select.propTypes = {
     textLabel: PropTypes.string.isRequired,
 };
 
-export default Select;
+export default FormSelect;

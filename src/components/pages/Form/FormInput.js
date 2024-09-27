@@ -1,16 +1,17 @@
 import PropTypes from 'prop-types';
 
-function Input({
+function FormInput({
     className = {
         div: 'form-floating mb-4',
         input: 'form-control',
-        label: ''
+        label: '',
     },
     typeInput = 'text',
     nameInput,
     idInput = '',
     valueInput,
     placeholderInput,
+    patternInput,
     requiredInput = false,
     readOnlyInput = false,
     textLabel,
@@ -22,8 +23,9 @@ function Input({
                 type={typeInput}
                 name={nameInput}
                 id={idInput}
-                value={valueInput}
                 className={className.input}
+                value={valueInput}
+                pattern={patternInput}
                 placeholder={placeholderInput ? placeholderInput : textLabel}
                 required={requiredInput}
                 readOnly={readOnlyInput}
@@ -36,7 +38,7 @@ function Input({
     );
 }
 
-Input.propTypes = {
+FormInput.propTypes = {
     className: PropTypes.shape({
         div: PropTypes.string,
         input: PropTypes.string,
@@ -46,10 +48,11 @@ Input.propTypes = {
     nameInput: PropTypes.string,
     idInput: PropTypes.string.isRequired,
     valueInput: PropTypes.string,
+    patternInput: PropTypes.string,
     placeholderInput: PropTypes.string,
     requiredInput: PropTypes.bool,
     readOnlyInput: PropTypes.bool,
     textLabel: PropTypes.string.isRequired,
 };
 
-export default Input;
+export default FormInput;
