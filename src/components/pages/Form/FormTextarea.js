@@ -10,6 +10,8 @@ function FormTextarea({
     idInput = '',
     valueInput,
     styleInput,
+    rowsInput,
+    colsInput,
     placeholderInput,
     requiredInput = false,
     readOnlyInput = false,
@@ -23,6 +25,8 @@ function FormTextarea({
                 name={nameInput}
                 className={className.input}
                 style={styleInput}
+                rows={rowsInput}
+                cols={colsInput}
                 placeholder={placeholderInput ? placeholderInput : textLabel}
                 required={requiredInput}
                 readOnly={readOnlyInput}
@@ -47,6 +51,8 @@ FormTextarea.propTypes = {
     idInput: PropTypes.string.isRequired,
     styleInput: PropTypes.string,
     valueInput: PropTypes.string,
+    rowsInput: PropTypes.number,
+    colsInput: PropTypes.number,
     placeholderInput: PropTypes.string,
     requiredInput: PropTypes.bool,
     readOnlyInput: PropTypes.bool,
