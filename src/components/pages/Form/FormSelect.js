@@ -7,9 +7,9 @@ function FormSelect({
         label: '',
     },
     idInput = '',
-    classNameInput = 'form-control',
     requiredInput = false,
     readOnlyInput = false,
+    textSelectDefault = 'Open this select menu',
     isSelected = true,
     optionSelect = [],
     textLabel,
@@ -27,14 +27,20 @@ function FormSelect({
                 readOnly={readOnlyInput}
                 {...passPropsInput}
             >
-                <option selected={isSelected}>Open this select menu</option>
+                <option selected={isSelected}>{textSelectDefault}</option>
                 {optionSelect.map((option) => (
-                    <option key={option.id} value={option.value} selected={option.isSelected}>
+                    <option key={option.value} value={option.value} selected={option.isSelected}>
                         {option.text}
                     </option>
                 ))}
             </select>
-            <label for={idInput} className={className.label}>{textLabel}</label>
+            {
+                (textLabel) ? (
+                    <label for={idInput} className={className.label}>
+                        {textLabel}
+                    </label>
+                ) : null
+            }
         </div>
     );
 }
@@ -51,13 +57,12 @@ FormSelect.propTypes = {
     isSelected: PropTypes.bool,
     optionSelect: PropTypes.arrayOf(
         PropTypes.shape({
-            id: PropTypes.number.isRequired,
             value: PropTypes.string.isRequired,
             text: PropTypes.string.isRequired,
             isSelected: PropTypes.bool.isRequired,
         }),
     ).isRequired,
-    textLabel: PropTypes.string.isRequired,
+    textLabel: PropTypes.string,
 };
 
 export default FormSelect;

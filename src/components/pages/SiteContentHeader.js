@@ -1,8 +1,8 @@
 import PropTypes from 'prop-types';
 
-function MainHeaderComponent({ textFirst, textSecond, sideRight }) {
+function SiteContentHeader({ textFirst, textSecond, sideNodeRight }) {
     return (
-        <div className="MainHeaderComponent">
+        <div className="site-content-header">
             <header className="site-header section-padding-img site-header-image">
                 <div className="container">
                     <div className="row">
@@ -15,16 +15,16 @@ function MainHeaderComponent({ textFirst, textSecond, sideRight }) {
                     </div>
                 </div>
 
-                {sideRight}
+                {sideNodeRight}
             </header>
         </div>
     );
 }
 
-MainHeaderComponent.propTypes = {
+SiteContentHeader.propTypes = {
     textFirst: PropTypes.string.isRequired,
     textSecond: PropTypes.string.isRequired,
-    sideRight: PropTypes.node,
+    sideNodeRight: PropTypes.node,
 };
 
-export default MainHeaderComponent;
+export default SiteContentHeader;

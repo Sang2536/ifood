@@ -1,7 +1,6 @@
 function CartModalComponent () {
     return (
         <div className="cart-modal-component">
-            {/* CART MODAL */}
             <div
                 className="modal fade"
                 id="cart-modal"
