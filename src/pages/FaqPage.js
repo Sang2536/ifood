@@ -68,9 +68,11 @@ function FaqPage() {
                                     },
                                 ]}
                             />
+
                             <h2 className="mt-5">
                                 About <span>our products</span>
                             </h2>
+                            
                             <AccordionVertically
                                 idAccordion="accordionProduct"
                                 dataAccordions={[

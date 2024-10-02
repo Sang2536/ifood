@@ -2,7 +2,10 @@ import { NavLink } from 'react-router-dom';
 
 import '../scss/pages/contact.scss';
 import '../scss/components/tags/custom-btn.scss';
-import configs from '../configs';
+import { SiteContentHeader } from '../components/pages';
+import { FormInput, FormTextarea } from '../components/pages/form';
+import { IconList } from '../components/pages/list';
+import { Image } from '../components/tags';
 import {
     BrandFacebookIcon,
     BrandInstagramIcon,
@@ -15,24 +18,17 @@ import {
 function ContactPage() {
     return (
         <div className="contact-page">
-            <header className="site-header section-padding-img site-header-image">
-                <div className="container">
-                    <div className="row">
-                        <div className="col-lg-10 col-12 header-info">
-                            <h1>
-                                <span className="d-block text-primary">Say hello to us</span>
-                                <span className="d-block text-dark">love to hear you</span>
-                            </h1>
-                        </div>
-                    </div>
-                </div>
-
-                <img
-                    src="https://i.pinimg.com/564x/1b/9e/cb/1b9ecb506f3233667d426f73ccf73b0a.jpg"
-                    className="header-image img-fluid"
-                    alt=""
-                />
-            </header>
+            <SiteContentHeader
+                textFirst="Say hello to us"
+                textSecond="love to hear you"
+                sideNodeRight={
+                    <Image
+                        src="https://i.pinimg.com/564x/1b/9e/cb/1b9ecb506f3233667d426f73ccf73b0a.jpg"
+                        className="header-image img-fluid"
+                        alt=""
+                    />
+                }
+            />
 
             <section className="contact section-padding">
                 <div className="container">
@@ -43,54 +39,59 @@ function ContactPage() {
                             </h2>
 
                             <form className="contact-form me-lg-5 pe-lg-3" role="form">
-                                <div className="form-floating">
-                                    <input
-                                        type="text"
-                                        name="name"
-                                        id="name"
-                                        className="form-control"
-                                        placeholder="Full name"
-                                        required
-                                    />
-                                    <label for="name">Full name</label>
-                                </div>
+                                <FormInput
+                                    className={{
+                                        div: 'form-floating my-4',
+                                        input: 'form-control',
+                                    }}
+                                    typeInput="text"
+                                    nameInput="name"
+                                    idInput="name"
+                                    valueInput=""
+                                    placeholderInput="Full name"
+                                    requiredInput
+                                    textLabel="Full name"
+                                />
 
-                                <div className="form-floating my-4">
-                                    <input
-                                        type="email"
-                                        name="email"
-                                        id="email"
-                                        pattern="[^ @]*@[^ @]*"
-                                        className="form-control"
-                                        placeholder="Email address"
-                                        required
-                                    />
-                                    <label for="email">Email address</label>
-                                </div>
+                                <FormInput
+                                    className={{
+                                        div: 'form-floating my-4',
+                                        input: 'form-control',
+                                    }}
+                                    typeInput="email"
+                                    nameInput="email"
+                                    idInput="email"
+                                    pattern="[^ @]*@[^ @]*"
+                                    placeholderInput="Email address"
+                                    requiredInput
+                                    textLabel="Email address"
+                                />
 
-                                <div className="form-floating my-4">
-                                    <input
-                                        type="subject"
-                                        name="subject"
-                                        id="subject"
-                                        className="form-control"
-                                        placeholder="Subject"
-                                        required
-                                    />
-                                    <label for="subject">Subject</label>
-                                </div>
+                                <FormInput
+                                    className={{
+                                        div: 'form-floating my-4',
+                                        input: 'form-control',
+                                    }}
+                                    typeInput="subject"
+                                    nameInput="subject"
+                                    idInput="subject"
+                                    placeholderInput="Subject"
+                                    requiredInput
+                                    textLabel="Subject"
+                                />
 
-                                <div className="form-floating mb-4">
-                                    <textarea
-                                        id="message"
-                                        name="message"
-                                        className="form-control"
-                                        placeholder="Leave a comment here"
-                                        required
-                                        style={{ height: '160px' }}
-                                    ></textarea>
-                                    <label for="message">Tell us about the project</label>
-                                </div>
+                                <FormTextarea
+                                    className={{
+                                        div: 'form-floating my-4',
+                                        input: 'form-control',
+                                    }}
+                                    nameInput="message"
+                                    idInput="message"
+                                    styleInput={{ height: '160px' }}
+                                    placeholderInput="Leave a comment here"
+                                    requiredInput
+                                    textLabel="Tell us about the project"
+                                />
 
                                 <div className="col-lg-5 col-6">
                                     <button type="submit" className="form-control">
@@ -129,45 +130,60 @@ function ContactPage() {
                                 <div className="col-6 border-top contact-info">
                                     <h6 className="mb-3">Our Socials</h6>
 
-                                    <ul className="social-icon">
-                                        <li>
-                                            <NavLink to="/link-facebook" className="me-3 social-icon-link bi-facebook">
-                                                <BrandFacebookIcon />
-                                            </NavLink>
-                                        </li>
-                                        <li>
-                                            <NavLink to="/link-telegram" className="me-3 social-icon-link bi-telegram">
-                                                <BrandTelegramIcon />
-                                            </NavLink>
-                                        </li>
-
-                                        <li>
-                                            <NavLink to="/link-youtube" className="me-3 social-icon-link bi-youtube">
-                                                <BrandYoutubeIcon />
-                                            </NavLink>
-                                        </li>
-
-                                        <li>
-                                            <NavLink
-                                                to="/link-instagram"
-                                                className="me-3 social-icon-link bi-instagram"
-                                            >
-                                                <BrandInstagramIcon />
-                                            </NavLink>
-                                        </li>
-
-                                        <li>
-                                            <NavLink to="/link-whatsapp" className="me-3 social-icon-link bi-whatsapp">
-                                                <BrandWhatsappIcon />
-                                            </NavLink>
-                                        </li>
-
-                                        <li>
-                                            <NavLink to="/link-tiktok" className="me-3 social-icon-link bi-tiktok">
-                                                <BrandTiktokIcon />
-                                            </NavLink>
-                                        </li>
-                                    </ul>
+                                    <IconList
+                                        dataIcon={[
+                                            {
+                                                linkTo: '/link-facebook',
+                                                iconLeft: <BrandFacebookIcon />,
+                                                className: {
+                                                    link: 'me-3 social-icon-link bi-facebook',
+                                                },
+                                            },
+                                            {
+                                                linkTo: null,
+                                                iconLeft: <BrandFacebookIcon />,
+                                                className: {
+                                                    li: 'text-red',
+                                                    link: 'me-3 social-icon-link bi-facebook',
+                                                },
+                                            },
+                                            {
+                                                linkTo: '/link-telegram',
+                                                iconLeft: <BrandTelegramIcon />,
+                                                className: {
+                                                    link: 'me-3 social-icon-link bi-telegram',
+                                                },
+                                            },
+                                            {
+                                                linkTo: '/link-youtube',
+                                                iconLeft: <BrandYoutubeIcon />,
+                                                className: {
+                                                    link: 'me-3 social-icon-link bi-youtube',
+                                                },
+                                            },
+                                            {
+                                                linkTo: '/link-instagram',
+                                                iconLeft: <BrandInstagramIcon />,
+                                                className: {
+                                                    link: 'me-3 social-icon-link bi-instagram',
+                                                },
+                                            },
+                                            {
+                                                linkTo: '/link-whatsapp',
+                                                iconLeft: <BrandWhatsappIcon />,
+                                                className: {
+                                                    link: 'me-3 social-icon-link bi-whatsapp',
+                                                },
+                                            },
+                                            {
+                                                linkTo: '/link-tiktok',
+                                                iconLeft: <BrandTiktokIcon />,
+                                                className: {
+                                                    link: 'me-3 social-icon-link bi-tiktok',
+                                                },
+                                            },
+                                        ]}
+                                    />
                                 </div>
                             </div>
                         </div>

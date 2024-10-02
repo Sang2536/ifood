@@ -1,30 +1,23 @@
-import { NavLink } from 'react-router-dom';
-
 import '../scss/pages/profile.scss';
-import configs from '../configs';
+import { SiteContentHeader } from '../components/pages';
+import { IconList } from '../components/pages/list';
+import { Image } from '../components/tags';
 import { BrandFacebookIcon, BrandGmailIcon, BrandInstagramIcon, BrandTelegramIcon, BrandTwitterIcon } from '../icons';
 
 function ProfilePage() {
     return (
         <div className="profile-page">
-            <header className="site-header section-padding-img site-header-image">
-                <div className="container">
-                    <div className="row">
-                        <div className="col-lg-10 col-12 header-info">
-                            <h1>
-                                <span className="d-block text-primary">Mini profile,</span>
-                                <span className="d-block text-dark">@username</span>
-                            </h1>
-                        </div>
-                    </div>
-                </div>
-
-                <img
-                    src="https://i.pinimg.com/564x/1b/9e/cb/1b9ecb506f3233667d426f73ccf73b0a.jpg"
-                    className="header-image img-fluid"
-                    alt=""
-                />
-            </header>
+            <SiteContentHeader
+                textFirst="Mini profile,"
+                textSecond="@username"
+                sideNodeRight={
+                    <Image
+                        src="https://i.pinimg.com/564x/1b/9e/cb/1b9ecb506f3233667d426f73ccf73b0a.jpg"
+                        className="header-image img-fluid"
+                        alt=""
+                    />
+                }
+            />
 
             <section className="contact section-padding">
                 <div className="container">
@@ -34,7 +27,7 @@ function ProfilePage() {
                         </div>
                     </div>
 
-                    <div className="row">
+                    <div className="row mt-4">
                         <div className="col-lg-5 col-12">
                             <h5>Contact</h5>
                             <ul className="info">
@@ -60,6 +53,10 @@ function ProfilePage() {
                                         198 West 21th Street, Suite 721 New York NY 10016
                                     </span>
                                 </li>
+                                <li>
+                                    <span className="first-block">Social:</span>
+                                    <span className="second-block">Social</span>
+                                </li>
                             </ul>
                         </div>
 
@@ -80,37 +77,49 @@ function ProfilePage() {
                             </p>
 
                             <h5>Social</h5>
-                            <ul className="social-icon">
-                                <li>
-                                    <NavLink to="/link-facebook" className="social-icon-link bi-facebook">
-                                        <BrandFacebookIcon />
-                                    </NavLink>
-                                </li>
-                                <li>
-                                    <NavLink to="/link-twitter" className="social-icon-link bi-twitter">
-                                        <BrandTwitterIcon />
-                                    </NavLink>
-                                </li>
-                                <li>
-                                    <NavLink to="/link-instagram" className="social-icon-link bi-instagram">
-                                        <BrandInstagramIcon />
-                                    </NavLink>
-                                </li>
-                                <li>
-                                    <NavLink to="/link-gmail" className="social-icon-link bi-gmail">
-                                        <BrandGmailIcon />
-                                    </NavLink>
-                                </li>
-                                <li>
-                                    <NavLink to="/link-telegram" className="social-icon-link bi-telegram">
-                                        <BrandTelegramIcon />
-                                    </NavLink>
-                                </li>
-                            </ul>
+                            <IconList
+                                dataIcon={[
+                                    {
+                                        linkTo: '/link-facebook',
+                                        iconLeft: <BrandFacebookIcon />,
+                                        className: {
+                                            link: 'me-3 social-icon-link bi-facebook',
+                                        },
+                                    },
+                                    {
+                                        linkTo: '/link-gmail',
+                                        iconLeft: <BrandGmailIcon />,
+                                        className: {
+                                            link: 'me-3 social-icon-link bi-gmail',
+                                        },
+                                    },
+                                    {
+                                        linkTo: '/link-telegram',
+                                        iconLeft: <BrandTelegramIcon />,
+                                        className: {
+                                            link: 'me-3 social-icon-link bi-telegram',
+                                        },
+                                    },
+                                    {
+                                        linkTo: '/link-instagram',
+                                        iconLeft: <BrandInstagramIcon />,
+                                        className: {
+                                            link: 'me-3 social-icon-link bi-instagram',
+                                        },
+                                    },
+                                    {
+                                        linkTo: '/link-twitter',
+                                        iconLeft: <BrandTwitterIcon />,
+                                        className: {
+                                            link: 'me-3 social-icon-link bi-twitter',
+                                        },
+                                    },
+                                ]}
+                            />
                         </div>
                     </div>
 
-                    <div className="row">
+                    <div className="row mt-5">
                         <div className="col-lg-5 col-12">
                             <h5>Setting</h5>
                         </div>
