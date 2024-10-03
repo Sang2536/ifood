@@ -15,6 +15,7 @@ function FormInput({
     requiredInput = false,
     readOnlyInput = false,
     textLabel,
+    noteNode,
     ...passPropsInput
 }) {
     return (
@@ -34,6 +35,8 @@ function FormInput({
             <label for={idInput} className={className.label}>
                 {textLabel}
             </label>
+
+            {noteNode}
         </div>
     );
 }
@@ -53,6 +56,7 @@ FormInput.propTypes = {
     requiredInput: PropTypes.bool,
     readOnlyInput: PropTypes.bool,
     textLabel: PropTypes.string.isRequired,
+    noteNode: PropTypes.node,
 };
 
 export default FormInput;

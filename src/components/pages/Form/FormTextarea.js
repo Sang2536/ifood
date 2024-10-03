@@ -16,6 +16,7 @@ function FormTextarea({
     requiredInput = false,
     readOnlyInput = false,
     textLabel,
+    noteNode,
     ...passPropsInput
 }) {
     return (
@@ -37,6 +38,8 @@ function FormTextarea({
             <label for={idInput} className={className.label}>
                 {textLabel}
             </label>
+
+            {noteNode}
         </div>
     );
 }
@@ -57,6 +60,7 @@ FormTextarea.propTypes = {
     requiredInput: PropTypes.bool,
     readOnlyInput: PropTypes.bool,
     textLabel: PropTypes.string.isRequired,
+    noteNode: PropTypes.node,
 };
 
 export default FormTextarea;

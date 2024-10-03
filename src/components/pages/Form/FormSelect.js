@@ -13,6 +13,7 @@ function FormSelect({
     isSelected = true,
     optionSelect = [],
     textLabel,
+    noteNode,
     ...passPropsInput
 }) {
     isSelected = optionSelect.length ? false : true;
@@ -41,6 +42,8 @@ function FormSelect({
                     </label>
                 ) : null
             }
+
+            {noteNode}
         </div>
     );
 }
@@ -63,6 +66,7 @@ FormSelect.propTypes = {
         }),
     ).isRequired,
     textLabel: PropTypes.string,
+    noteNode: PropTypes.node,
 };
 
 export default FormSelect;

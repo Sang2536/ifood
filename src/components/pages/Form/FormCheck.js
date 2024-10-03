@@ -14,6 +14,7 @@ function FormCheck({
     readOnlyInput = false,
     isChecked = false,
     textLabel,
+    noteNode,
     ...passPropsInput
 }) {
     return (
@@ -35,6 +36,8 @@ function FormCheck({
             <label for={idInput} className={className.label}>
                 {textLabel}
             </label>
+
+            {noteNode}
         </div>
     );
 }
@@ -53,6 +56,7 @@ FormCheck.propTypes = {
     requiredInput: PropTypes.bool,
     readOnlyInput: PropTypes.bool,
     textLabel: PropTypes.string.isRequired,
+    noteNode: PropTypes.node,
 };
 
 export default FormCheck;
